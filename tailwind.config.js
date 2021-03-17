@@ -1,0 +1,35 @@
+const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
+
+module.exports = {
+  purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        gray: colors.trueGray,
+        blue: colors.lightBlue,
+        brand: "#0864a6", // hsl(205, 91%, 34%)
+        "brand-dark": "#064675", // hsl(205, 91%, 24%)
+        "brand-gradient": "#e8f4fd", // hsl(205, 91%, 95%)
+      },
+      fontFamily: {
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+      },
+    },
+    // ringColor: (theme) => ({
+    //   ...defaultTheme.ringColor(theme),
+    //   DEFAULT: "#0865A7",
+    // }),
+    screens: {
+      xs: "360px",
+      ...defaultTheme.screens,
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ["disabled"],
+      opacity: ["disabled"],
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
