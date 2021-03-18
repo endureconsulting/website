@@ -1,5 +1,9 @@
 import Head from "next/head";
-import { Nav, Header, Footer, ContactUs } from "../components";
+
+import { Nav } from "@/components/nav";
+import { Header } from "@/components/header";
+import { ContactUs } from "@/components/contact-us";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -10,7 +14,6 @@ export default function Home() {
           name="description"
           content="Technology consulting consulting services, business development consulting services, and copy writing, copy editing and ghostwriting services."
         />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
       <main className="bg-gradient-to-b from-gray-50 to-brand-gradient">
         <div className="relative overflow-hidden">
