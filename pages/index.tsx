@@ -1,5 +1,4 @@
-import Head from "next/head";
-
+import { Container } from "@/components/container";
 import { Nav } from "@/components/nav";
 import { Header } from "@/components/header";
 import { ContactUs } from "@/components/contact-us";
@@ -7,14 +6,7 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Endure Consulting</title>
-        <meta
-          name="description"
-          content="Technology consulting consulting services, business development consulting services, and copy writing, copy editing and ghostwriting services."
-        />
-      </Head>
+    <Container>
       <main className="bg-gradient-to-b from-gray-50 to-brand-gradient">
         <div className="relative overflow-hidden">
           <img
@@ -49,6 +41,6 @@ export default function Home() {
         </div>
       </main>
       <Footer>&copy; {new Date().getFullYear()} | Endure Consulting</Footer>
-    </>
+    </Container>
   );
 }
