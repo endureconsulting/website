@@ -112,9 +112,9 @@ export const Select = ({
 );
 
 interface SelectOptionProps {
+  [prop: string]: any;
   children: ReactNode;
   value: string;
-  [prop: string]: any;
 }
 
 Select.Option = ({ children, value, ...remainingProps }: SelectOptionProps) => (

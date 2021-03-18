@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Formik, Field, ErrorMessage, Form, FormikHelpers } from "formik";
-import { contactSchema } from "../../schemas";
+
+import { contactSchema } from "@/lib/schemas";
 import { Input, Select, TextArea, SubmitButton } from "./form-elements";
 
 interface Values {
@@ -49,6 +50,7 @@ export const ContactUs = () => {
                 });
                 setHasSentEmail(true);
               } catch {}
+
               setSubmitting(false);
             }}
           >
@@ -148,7 +150,7 @@ export const ContactUs = () => {
                     name="phone"
                     component={Input}
                     onChange={(value, { form }) => {
-                      value = value.replace(/[\(\)\-\s]/g, "");
+                      value = value.replace(/[()\-\s]/g, "");
 
                       if (
                         value === "" ||
@@ -184,7 +186,7 @@ export const ContactUs = () => {
   );
 };
 
-function formatPhone(value) {
+function formatPhone(value: string) {
   if (value.length === 0) return "";
   if (value.length < 4) return `(${value}`;
   if (value.length < 7) return `(${value.slice(0, 3)}) ${value.slice(3, 6)}`;

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://endureconsulting.net/sitemap.xml

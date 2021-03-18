@@ -1,28 +1,49 @@
 {
-  "name": "endure-consulting",
-  "version": "0.1.0",
+  "name": "endureconsulting.net",
+  "version": "1.0.0",
   "private": true,
+  "lint-staged": {
+    "*.{js,ts,tsx}": "xo"
+  },
+  "prettier": {
+    "useTabs": false,
+    "trailingComma": "es5",
+    "singleQuote": false,
+    "bracketSpacing": true
+  },
+  "xo": {
+    "prettier": true,
+    "rules": {
+      "capitalized-comments": "off"
+    }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "husky install"
   },
   "dependencies": {
+    "@sendgrid/helpers": "7.4.2",
     "@sendgrid/mail": "7.4.2",
+    "@tailwindcss/forms": "0.2.1",
+    "autoprefixer": "10.2.5",
     "formik": "2.2.6",
-    "next": "10.0.7",
+    "next": "10.0.9",
+    "postcss": "8.2.8",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "tailwindcss": "2.0.4",
     "yup": "0.32.9"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "0.2.1",
-    "@types/node": "14.14.31",
-    "@types/react": "17.0.2",
+    "@types/node": "14.14.35",
+    "@types/react": "17.0.3",
     "@types/yup": "0.29.11",
-    "autoprefixer": "10.2.4",
-    "postcss": "8.2.6",
-    "tailwindcss": "2.0.3",
-    "typescript": "4.2.2"
+    "husky": "5.1.3",
+    "lint-staged": "10.5.4",
+    "prettier": "2.2.1",
+    "typescript": "4.2.3",
+    "xo": "0.38.2"
   }
 }
