@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-export default class EndureConsulting extends Document {
+export default class EndureConsultingDocument extends Document {
   render() {
     return (
       <Html lang="en">
