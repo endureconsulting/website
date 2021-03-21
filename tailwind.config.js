@@ -13,7 +13,7 @@ module.exports = {
         "brand-gradient": "#e8f4fd", // hsl(205, 91%, 95%)
       },
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
     // ringColor: (theme) => ({
