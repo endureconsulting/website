@@ -23,7 +23,7 @@ export const ContactUs = () => {
       <div className="relative max-w-xl mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Contact Us
+            Contact us
           </h2>
         </div>
         <div className="mt-8">
