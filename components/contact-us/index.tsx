@@ -175,7 +175,7 @@ export const ContactUs = () => {
               </div>
               <div className="sm:col-span-2">
                 <SubmitButton hasSentEmail={hasSentEmail}>
-                  {hasSentEmail ? "Sent" : "Submit Inquiry"}
+                  {hasSentEmail ? "Sent" : "Submit"}
                 </SubmitButton>
               </div>
             </Form>
