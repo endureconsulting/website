@@ -57,7 +57,7 @@ export const ContactUs = () => {
             <Form className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-y-6 sm:gap-x-8">
               <div className="sm:col-span-2">
                 <div className="flex items-baseline">
-                  <Input.Label htmlFor="reason">Reason for Inquiry</Input.Label>
+                  <Input.Label htmlFor="reason">Topic</Input.Label>
                   <ErrorMessage name="reason" component={Input.ErrorMessage} />
                 </div>
                 <div className="mt-1">
