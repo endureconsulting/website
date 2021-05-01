@@ -40,7 +40,9 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer>&copy; {new Date().getFullYear()} | Endure Consulting LLC</Footer>
+      <Footer>
+        &copy; {new Date().getFullYear()} | Endure Consulting, LLC
+      </Footer>
     </Container>
   );
 }
