@@ -41,7 +41,8 @@ export default function Home() {
         </div>
       </main>
       <Footer>
-        &copy; {new Date().getFullYear()} | Endure Consulting, LLC
+        &copy; {new Date().getFullYear()} | Endure Consulting
+        LLC
       </Footer>
     </Container>
   );
