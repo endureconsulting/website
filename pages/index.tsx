@@ -26,7 +26,7 @@ export default function Home() {
               headline="Endure Consulting"
               subhead="Integrity. Truth. Partnership."
             >
-              Website coming soon…
+              Full website coming soon…
             </Header>
           </div>
           <div className="relative">
