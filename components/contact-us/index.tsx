@@ -68,6 +68,9 @@ export const ContactUs = () => {
                     <Select.Option value="Services Offered">
                       Services Offered
                     </Select.Option>
+                    <Select.Option value="Copy Editing/Proofreading Inquiry">
+                      Copy Editing/Proofreading Inquiry
+                    </Select.Option>
                     <Select.Option value="Schedule Call or Meeting">
                       Schedule Call or Meeting
                     </Select.Option>
