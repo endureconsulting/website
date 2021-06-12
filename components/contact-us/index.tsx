@@ -65,8 +65,8 @@ export const ContactUs = () => {
                     <Select.Option value="General Inquiry">
                       General Inquiry
                     </Select.Option>
-                    <Select.Option value="Services Offered">
-                      Services Offered
+                    <Select.Option value="IT Engineering Inquiry">
+                      IT Engineering Inquiry
                     </Select.Option>
                     <Select.Option value="Copy Editing/Proofreading Inquiry">
                       Copy Editing/Proofreading Inquiry
