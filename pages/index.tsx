@@ -25,8 +25,7 @@ export default function Home() {
             <Header
               headline="Endure Consulting"
               subhead="Integrity. Truth. Partnership."
-            >
-            </Header>
+            ></Header>
           </div>
           <div className="relative">
             <div className="absolute inset-0 flex flex-col" aria-hidden="true">
