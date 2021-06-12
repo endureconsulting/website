@@ -20,8 +20,10 @@ export default async function handler(
     return;
   }
 
+  const requestBody: string = request.body;
+
   try {
-    await contactSchema.validate(JSON.parse(request.body));
+    await contactSchema.validate(JSON.parse(requestBody));
   } catch {
     response.status(400).json({
       message: STATUS_CODES[400],
@@ -50,7 +52,7 @@ export default async function handler(
       email,
       phone,
       message,
-    }: RequestBody = JSON.parse(request.body);
+    }: RequestBody = JSON.parse(requestBody);
 
     const name = `${firstName.trim()} ${lastName.trim()}`;
 

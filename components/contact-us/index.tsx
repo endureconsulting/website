@@ -158,7 +158,7 @@ export const ContactUs = () => {
                     type="tel"
                     name="phone"
                     component={Input}
-                    onChange={(value, { form }) => {
+                    onChange={(value: string, { form }) => {
                       value = value.replace(/[()\-\s]/g, "");
 
                       if (
