@@ -65,11 +65,11 @@ export const ContactUs = () => {
                     <Select.Option value="General Inquiry">
                       General Inquiry
                     </Select.Option>
-                    <Select.Option value="IT Engineering Inquiry">
-                      IT Engineering Inquiry
+                    <Select.Option value="IT Engineering">
+                      IT Engineering
                     </Select.Option>
-                    <Select.Option value="Copy Editing/Proofreading Inquiry">
-                      Copy Editing/Proofreading Inquiry
+                    <Select.Option value="Copy Editing/Proofreading">
+                      Copy Editing/Proofreading
                     </Select.Option>
                     <Select.Option value="Schedule Call or Meeting">
                       Schedule Call or Meeting
