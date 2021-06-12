@@ -16,7 +16,7 @@ export default function Home() {
             src="./logo.svg"
             alt=""
           />
-          <div className="relative pb-16 sm:pb-24">
+          <div className="relative">
             <Nav>
               <Nav.Link href="#">About</Nav.Link>
               <Nav.Link href="#">Services</Nav.Link>
@@ -34,7 +34,10 @@ export default function Home() {
               <div className="flex-1" />
               <div className="flex-1 w-full bg-brand-dark" />
             </div>
-            <div id="contact" className="max-w-3xl mx-auto px-4 sm:px-6">
+            <div
+              id="contact"
+              className="max-w-3xl mx-auto px-4 pt-16 sm:px-6 sm:pt-24"
+            >
               <ContactUs />
             </div>
           </div>
