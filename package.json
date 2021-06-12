@@ -24,6 +24,7 @@
     "postinstall": "husky install"
   },
   "dependencies": {
+    "@headlessui/react": "1.2.0",
     "@sendgrid/helpers": "7.4.3",
     "@sendgrid/mail": "7.4.4",
     "@tailwindcss/forms": "0.3.3",

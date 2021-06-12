@@ -1,6 +1,7 @@
 import { Container } from "@/components/container";
 import { Nav } from "@/components/nav";
 import { Header } from "@/components/header";
+import { VideoCta } from "@/components/video-cta";
 import { ContactUs } from "@/components/contact-us";
 import { Footer } from "@/components/footer";
 
@@ -25,9 +26,10 @@ export default function Home() {
             <Header
               headline="Endure Consulting"
               subhead="Integrity. Truth. Partnership."
-            >
-              Full website coming soon…
-            </Header>
+            />
+            <div className="mx-auto pt-16 sm:pt-24">
+              <VideoCta />
+            </div>
           </div>
           <div className="relative">
             <div className="absolute inset-0 flex flex-col" aria-hidden="true">

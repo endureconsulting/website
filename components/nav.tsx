@@ -5,7 +5,7 @@ interface Props {
 }
 
 export const Nav = ({ children }: Props) => (
-  <div className="fixed top-0 w-full py-3 bg-white shadow z-50">
+  <div className="fixed top-0 w-full py-3 bg-white shadow z-10">
     <div className="max-w-7xl mx-auto px-4 sm:px-6">
       <nav
         className="relative flex items-center justify-end xs:justify-center sm:h-10"
