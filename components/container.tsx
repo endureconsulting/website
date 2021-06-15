@@ -13,7 +13,7 @@ export const Container = ({ children, ...metaOverrides }: Props) => {
   const meta = {
     title: "Endure Consulting",
     description:
-      "Technology consulting consulting services, business development consulting services, and copy writing, copy editing and ghostwriting services.",
+      "IT consulting services, IT engineering services; software, data, mobile, and cloud engineering; copy editing and proofreading services.",
     type: "website",
     image: "https://endureconsulting.net/banner.png",
     ...metaOverrides,
