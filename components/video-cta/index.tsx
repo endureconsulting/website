@@ -12,10 +12,10 @@ export const VideoCta = () => {
       <Cta>
         <Cta.Title>Relationships and Honesty</Cta.Title>
         <Cta.Paragraph>
-          We want to re-share content from a Simon Sinek interview from
-          May 25, 2021. What he says in this short video clip perfectly
-          articulates our feelings on how genuinely important relationships,
-          caring, and honesty are to Endure Consulting.
+          We want to re-share content from a Simon Sinek interview from May 25,
+          2021. What he says in this short video clip perfectly articulates our
+          feelings on how genuinely important relationships, caring, and honesty
+          are to Endure Consulting.
         </Cta.Paragraph>
         <Cta.Trigger
           onClick={() => {
