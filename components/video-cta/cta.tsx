@@ -19,7 +19,7 @@ Cta.Title = ({ children }: Props) => (
 );
 
 Cta.Paragraph = ({ children }: Props) => (
-  <p className="mt-4 leading-6 text-brand-gradient sm:text-lg">{children}</p>
+  <p className="mt-4 leading-6 text-brand-gradient sm:text-sm">{children}</p>
 );
 
 interface CtaTriggerProps {
