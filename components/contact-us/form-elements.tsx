@@ -157,7 +157,7 @@ export const SubmitButton = ({ children, hasSentEmail }: SubmitButtonProps) => {
   return (
     <button
       type="submit"
-      className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand-dark hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand disabled:opacity-50 disabled:bg-brand-dark"
+      className="mt-8 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand-dark hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand disabled:opacity-50 disabled:bg-brand-dark"
       disabled={isSubmitting || hasSentEmail}
     >
       {icon}
