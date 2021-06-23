@@ -1,4 +1,7 @@
 import { ReactNode } from "react";
+import Link from "next/link";
+
+import { Menu } from "./menu";
 
 interface Props {
   children: ReactNode;
@@ -13,10 +16,12 @@ export const Nav = ({ children }: Props) => (
       >
         <div className="flex items-center flex-1 absolute inset-y-0 left-0">
           <div className="flex items-center justify-between w-full md:w-auto">
-            <a href="#">
-              <span className="sr-only">Endure Consulting</span>
-              <img className="h-8 w-auto sm:h-10" src="./logo.svg" alt="" />
-            </a>
+            <Link href="/">
+              <a>
+                <span className="sr-only">Endure Consulting</span>
+                <img className="h-8 w-auto sm:h-10" src="./logo.svg" alt="" />
+              </a>
+            </Link>
           </div>
         </div>
         <div className="flex space-x-5 sm:space-x-10">{children}</div>
@@ -33,8 +38,10 @@ interface NavLinkProps {
 Nav.Link = ({ children, href }: NavLinkProps) => (
   <a
     href={href}
-    className="font-medium text-sm py-1 border-b-2 border-transparent xs:text-base text-gray-500 hover:text-gray-900 hover:border-brand-dark"
+    className="font-medium text-sm py-1 border-b-2 border-transparent xs:text-base text-gray-500 hover:text-gray-900 hover:border-brand-dark focus:outline-none focus:border-brand-dark"
   >
     {children}
   </a>
 );
+
+Nav.Menu = Menu;
