@@ -3,7 +3,7 @@ import sgMail from "@sendgrid/mail";
 import { ResponseError } from "@sendgrid/helpers/classes";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { contactSchema } from "@/lib/schemas";
+import { contactSchema, contactSchemaWithProjectType } from "@/lib/schemas";
 
 // FIXME: setup sentry
 sgMail.setApiKey(process.env.ENDURE_SENDGRID_API_KEY);
@@ -23,7 +23,13 @@ export default async function handler(
   const requestBody: string = request.body;
 
   try {
-    await contactSchema.validate(JSON.parse(requestBody));
+    const json = JSON.parse(requestBody);
+    // eslint-disable-next-line unicorn/prefer-ternary
+    if (json.projectType) {
+      await contactSchemaWithProjectType.validate(json);
+    } else {
+      await contactSchema.validate(json);
+    }
   } catch {
     response.status(400).json({
       message: STATUS_CODES[400],
@@ -33,6 +39,7 @@ export default async function handler(
 
   interface RequestBody {
     reason: string;
+    projectType?: string;
     firstName: string;
     lastName: string;
     company: string;
@@ -45,6 +52,7 @@ export default async function handler(
   try {
     const {
       reason,
+      projectType,
       firstName,
       lastName,
       company,
@@ -62,7 +70,9 @@ export default async function handler(
           ? email
           : "thomas@endureconsulting.net",
       from: `${name} <${email.trim()}>`,
-      subject: reason.trim(),
+      subject: projectType
+        ? `${projectType.trim()} ${reason.trim()} Project`
+        : reason.trim(),
       text: `${message.trim()}
 
 ${name}
