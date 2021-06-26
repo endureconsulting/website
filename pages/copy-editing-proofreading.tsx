@@ -35,7 +35,7 @@ export default function CopyEditingProofreadingServices() {
         <div className="flex justify-center">
           <div className="max-w-xl pt-16 px-4 sm:pt-20 sm:px-6 lg:px-8">
             <div className="text-3xl font-extrabold text-center tracking-tight text-gray-800 sm:text-4xl">
-              We will…
+              How We Will Serve You…
             </div>
             <ul className="mt-3 list-disc">
               <li>
@@ -53,8 +53,8 @@ export default function CopyEditingProofreadingServices() {
                 audience.
               </li>
               <li>
-                Arrange content to ensure better ‘flow’ and more visual appeal
-                for the intended audience.
+                Arrange and rearrange content to ensure better ‘flow’ and more visual appeal
+                for intended target audience.
               </li>
             </ul>
           </div>
