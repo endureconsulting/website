@@ -1,6 +1,9 @@
+import Image from "next/image";
+
 import { Container } from "@/components/container";
 import { Layout } from "@/components/layout";
 import { Features } from "@/components/features";
+import copyEditingProofreadingServicesCover from "@/public/copy-editing-proofreading-services-cover.jpg";
 
 export default function CopyEditingProofreadingServices() {
   return (
@@ -8,10 +11,12 @@ export default function CopyEditingProofreadingServices() {
       <Layout>
         <div className="relative bg-brand mt-12 sm:mt-16">
           <div className="absolute inset-0">
-            <img
-              className="w-full h-full object-cover object-bottom"
-              src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=60&sat=-100"
-              alt=""
+            <Image
+              src={copyEditingProofreadingServicesCover}
+              alt="colored pencil lined up on top of white surface photo"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="bottom"
             />
             <div
               className="absolute inset-0 bg-brand mix-blend-multiply"
@@ -66,8 +71,8 @@ export default function CopyEditingProofreadingServices() {
               We would love to earn the opportunity to speak with you — and
               LISTEN TO YOU. If you are interested in getting acquainted to
               discuss your project(s), you can fill out the form below to
-              schedule a free 'discovery' meeting (via phone or video chat). We
-              will respond to your inquiry within 12 hours. Thank you!
+              schedule a free &apos;discovery&apos; meeting (via phone or video
+              chat). We will respond to your inquiry within 12 hours. Thank you!
             </p>
           </div>
         </div>

@@ -2,49 +2,40 @@
   "name": "endureconsulting.net",
   "version": "1.0.0",
   "private": true,
-  "lint-staged": {
-    "*.{js,ts,tsx}": "xo"
-  },
   "prettier": {
     "useTabs": false,
     "trailingComma": "es5",
     "singleQuote": false,
     "bracketSpacing": true
   },
-  "xo": {
-    "prettier": true,
-    "rules": {
-      "capitalized-comments": "off"
-    }
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "postinstall": "husky install"
+    "start": "next start"
   },
   "dependencies": {
     "@headlessui/react": "1.2.0",
     "@sendgrid/helpers": "7.4.3",
-    "@sendgrid/mail": "7.4.4",
+    "@sendgrid/mail": "7.4.5",
     "@tailwindcss/forms": "0.3.3",
     "autoprefixer": "10.2.6",
     "formik": "2.2.9",
-    "next": "10.2.3",
-    "postcss": "8.3.2",
+    "next": "11.0.0",
+    "postcss": "8.3.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "tailwindcss": "2.1.4",
+    "tailwindcss": "2.2.2",
     "yup": "0.32.9"
   },
   "devDependencies": {
     "@types/node": "14.x",
     "@types/react": "17.0.11",
     "@types/yup": "0.29.11",
-    "husky": "6.0.0",
-    "lint-staged": "11.0.0",
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1",
+    "eslint-plugin-promise": "5.1.0",
+    "eslint-plugin-unicorn": "33.0.1",
     "prettier": "2.3.1",
-    "typescript": "4.3.2",
-    "xo": "0.39.x"
+    "typescript": "4.3.4"
   }
 }

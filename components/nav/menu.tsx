@@ -1,6 +1,8 @@
-import { Fragment, ReactNode } from "react";
+import { Fragment, JSXElementConstructor, ReactNode } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
+
+import { PropsWithClassName } from "@/types/props-with-class-name";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -72,19 +74,17 @@ export const Menu = ({ children, name }: Props) => (
 interface MenuLinkProps {
   children: ReactNode;
   href: string;
-  icon: string;
+  IconComponent: JSXElementConstructor<PropsWithClassName>;
 }
 
-Menu.Link = ({ children, href, icon }: MenuLinkProps) => (
+Menu.Link = ({ children, href, IconComponent }: MenuLinkProps) => (
   <Link href={href}>
     <a className="-m-3 p-3 flex items-start rounded hover:bg-brand-gradient transition ease-in-out duration-150">
-      {/* TODO: bg-gray-50 */}
-      <img
-        className="flex-shrink-0 h-5 w-5 text-brand" // TODO: ensure this color is used
-        src={icon}
-        aria-hidden="true"
-      />
+      <IconComponent className="flex-shrink-0 h-5 w-5 text-brand" />
       <p className="ml-4 text-sm font-medium text-gray-900">{children}</p>
     </a>
   </Link>
 );
+
+// @ts-ignore
+Menu.Link.displayName = "Menu.Link";

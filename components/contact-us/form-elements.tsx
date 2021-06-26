@@ -1,6 +1,9 @@
 import { ReactNode, ChangeEvent } from "react";
 import { useFormikContext, FieldProps } from "formik";
 
+import { CheckSvg } from "@/components/svg/check-svg";
+import { SpinnerSvg } from "@/components/svg/spinner-svg";
+
 interface InputProps extends FieldProps {
   type?: "text" | "email" | "tel";
   onChange?: (value: string, fieldProps: FieldProps) => void;
@@ -45,6 +48,9 @@ Input.Label = ({ children, htmlFor }: LabelProps) => (
   </label>
 );
 
+// @ts-ignore
+Input.Label.displayName = "Input.Label";
+
 interface HintProps {
   children: ReactNode;
   id: string;
@@ -56,6 +62,9 @@ Input.Hint = ({ children, id }: HintProps) => (
   </span>
 );
 
+// @ts-ignore
+Input.Hint.displayName = "Input.Hint";
+
 interface ErrorMessage {
   children: ReactNode;
 }
@@ -63,6 +72,9 @@ interface ErrorMessage {
 Input.ErrorMessage = ({ children }: ErrorMessage) => (
   <span className="ml-1 text-xs text-red-500">{children}</span>
 );
+
+// @ts-ignore
+Input.ErrorMessage.displayName = "Input.ErrorMessage";
 
 interface TextAreaProps extends FieldProps {
   rows?: number;
@@ -123,6 +135,9 @@ Select.Option = ({ children, value, ...remainingProps }: SelectOptionProps) => (
   </option>
 );
 
+// @ts-ignore
+Select.Option.displayName = "Select.Option";
+
 interface SubmitButtonProps {
   children: ReactNode;
   hasSentEmail: boolean;
@@ -131,27 +146,11 @@ interface SubmitButtonProps {
 export const SubmitButton = ({ children, hasSentEmail }: SubmitButtonProps) => {
   const { isSubmitting } = useFormikContext();
 
-  let icon = null;
+  let icon: JSX.Element;
   if (isSubmitting) {
-    icon = (
-      <img
-        src="./spinner.svg"
-        className="mr-2 animate-spin"
-        width={24}
-        height={24}
-        alt="sending email"
-      />
-    );
+    icon = <SpinnerSvg className="mr-2 w-6 h-6 animate-spin" />;
   } else if (hasSentEmail) {
-    icon = (
-      <img
-        src="./check.svg"
-        className="mr-2"
-        width={24}
-        height={24}
-        alt="email sent"
-      />
-    );
+    icon = <CheckSvg className="mr-2 w-6 h-6" />;
   }
 
   return (

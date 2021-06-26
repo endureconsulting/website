@@ -1,3 +1,5 @@
+import { CheckSvg } from "@/components/svg/check-svg";
+
 const features = [
   "Advanced Education (graduate student dissertations, instructor lesson plans)",
   "eLearning (K-12 & HigherEd curriculum, adult/professional learning)",
@@ -23,16 +25,7 @@ export const Features = () => (
       {features.map((feature) => (
         <div key={feature} className="relative">
           {/* <dt> */}
-          {/* <CheckIcon
-                className="absolute h-6 w-6 text-green-500"
-                aria-hidden="true"
-              /> */}
-          <img
-            className="absolute h-6 w-6 text-green-500"
-            alt=""
-            src="./check-green.svg"
-            aria-hidden="true"
-          />
+          <CheckSvg className="absolute h-6 w-6 text-green-500" />
           <p className="ml-9 leading-6 font-medium text-gray-900">{feature}</p>
           {/* </dt>
               <dd className="mt-2 ml-9 text-base text-gray-500">

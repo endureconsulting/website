@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         gray: colors.trueGray,
-        blue: colors.lightBlue,
+        blue: colors.sky,
         brand: "#0864a6", // hsl(205, 91%, 34%)
         "brand-dark": "#064675", // hsl(205, 91%, 24%)
         "brand-gradient": "#e8f4fd", // hsl(205, 91%, 95%)
