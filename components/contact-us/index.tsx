@@ -103,8 +103,8 @@ export const ContactUs = () => {
                           <Select.Option value="Ongoing/Long-Term">
                             Ongoing/Long-Term
                           </Select.Option>
-                          <Select.Option value="One-time need/Short-Term">
-                            One-time need/Short-Term
+                          <Select.Option value="One-Time Need/Short-Term">
+                            One-Time Need/Short-Term
                           </Select.Option>
                         </Field>
                       </div>
