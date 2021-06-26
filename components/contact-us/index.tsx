@@ -87,7 +87,7 @@ export const ContactUs = () => {
                       </Field>
                     </div>
                   </div>
-                  {data.hasProjectType ? (
+                  {data.hasProjectType && (
                     <div>
                       <div className="flex items-baseline">
                         <Input.Label htmlFor="projectType">
@@ -109,7 +109,7 @@ export const ContactUs = () => {
                         </Field>
                       </div>
                     </div>
-                  ) : null}
+                  )}
                   <div>
                     <div className="flex items-baseline">
                       <Input.Label htmlFor="firstName">First Name</Input.Label>
@@ -199,7 +199,7 @@ export const ContactUs = () => {
                         name="phone"
                         component={Input}
                         onChange={(value: string, { form }) => {
-                          value = value.replace(/[()\-\s]/g, "");
+                          value = value.replace(/[\s()\-]/g, "");
 
                           if (
                             value === "" ||

@@ -18,9 +18,15 @@ Cta.Title = ({ children }: Props) => (
   </h2>
 );
 
+// @ts-ignore
+Cta.Title.displayName = "Cta.Title";
+
 Cta.Paragraph = ({ children }: Props) => (
   <p className="mt-4 leading-6 text-brand-gradient sm:text-base">{children}</p>
 );
+
+// @ts-ignore
+Cta.Paragraph.displayName = "Cta.Paragraph";
 
 interface CtaTriggerProps {
   children: ReactNode;
@@ -35,3 +41,6 @@ Cta.Trigger = ({ children, onClick }: CtaTriggerProps) => (
     {children}
   </button>
 );
+
+// @ts-ignore
+Cta.Trigger.displayName = "Cta.Trigger";

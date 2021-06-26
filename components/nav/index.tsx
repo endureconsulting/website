@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
+import logo from "@/public/logo.svg";
 import { Menu } from "./menu";
 
 interface Props {
@@ -19,7 +21,9 @@ export const Nav = ({ children }: Props) => (
             <Link href="/">
               <a>
                 <span className="sr-only">Endure Consulting</span>
-                <img className="h-8 w-auto sm:h-10" src="./logo.svg" alt="" />
+                <div className="w-8 h-8 sm:w-10 sm:h-10">
+                  <Image alt="" src={logo} layout="fill" objectFit="contain" />
+                </div>
               </a>
             </Link>
           </div>
@@ -44,4 +48,10 @@ Nav.Link = ({ children, href }: NavLinkProps) => (
   </a>
 );
 
+// @ts-ignore
+Nav.Link.displayName = "Nav.Link";
+
 Nav.Menu = Menu;
+
+// @ts-ignore
+Nav.Menu.displayName = "Nav.Menu";
