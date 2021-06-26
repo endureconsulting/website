@@ -35,7 +35,7 @@ export const routeData = {
       "Other",
     ],
     hasProjectType: true,
-    initialProjectType: "One-time need/Short-Term",
+    initialProjectType: "One-Time Need/Short-Term",
     messageTitle: "Message (brief description of your project)",
   },
 };
