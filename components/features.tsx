@@ -1,5 +1,5 @@
 const features = [
-  "Advanced Education (graduate student dissertations, lectures/lesson plans)",
+  "Advanced Education (graduate student dissertations, instructor lesson plans)",
   "eLearning (K-12 & HigherEd curriculum, adult/professional learning)",
   "Cover Letter and Resume Writing",
   "Social Media & Blog Posts",
