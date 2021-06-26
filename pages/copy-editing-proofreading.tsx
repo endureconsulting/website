@@ -63,10 +63,11 @@ export default function CopyEditingProofreadingServices() {
         <div className="bg-brand-dark shadow">
           <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
             <p className="text-lg text-gray-50 max-w-2xl">
-              We would love to earn the opportunity to speak with you — and LISTEN TO YOU. 
-              If you are interested in getting acquainted to discuss your project(s), you
-              can fill out the form below to schedule a free 'discovery' meeting (via phone 
-              or video chat). We will respond to your inquiry within 12 hours. Thank you!
+              We would love to earn the opportunity to speak with you — and
+              LISTEN TO YOU. If you are interested in getting acquainted to
+              discuss your project(s), you can fill out the form below to
+              schedule a free 'discovery' meeting (via phone or video chat). We
+              will respond to your inquiry within 12 hours. Thank you!
             </p>
           </div>
         </div>
