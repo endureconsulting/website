@@ -21,7 +21,16 @@ export const ContactUs = () => {
   const router = useRouter();
   const [hasSentEmail, setHasSentEmail] = useState(false);
 
-  const data = routeData[router.asPath];
+  const {
+    title,
+    schema,
+    reasonTitle,
+    initialReason,
+    reasons,
+    hasProjectType,
+    initialProjectType,
+    messageTitle,
+  } = routeData[router.asPath];
 
   return (
     <>
@@ -34,14 +43,14 @@ export const ContactUs = () => {
           <div className="relative max-w-xl mx-auto">
             <div className="text-center">
               <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                {data.title}
+                {title}
               </h2>
             </div>
             <div className="mt-8">
               <Formik
                 initialValues={{
-                  reason: data.initialReason,
-                  projectType: data.initialProjectType,
+                  reason: initialReason,
+                  projectType: initialProjectType,
                   firstName: "",
                   lastName: "",
                   company: "",
@@ -50,7 +59,7 @@ export const ContactUs = () => {
                   phone: "",
                   message: "",
                 }}
-                validationSchema={data.schema}
+                validationSchema={schema}
                 onSubmit={async (
                   values: Values,
                   { setSubmitting }: FormikHelpers<Values>
@@ -67,11 +76,9 @@ export const ContactUs = () => {
                 }}
               >
                 <Form className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-y-6 sm:gap-x-8">
-                  <div className={data.hasProjectType ? "" : "sm:col-span-2"}>
+                  <div className={hasProjectType ? "" : "sm:col-span-2"}>
                     <div className="flex items-baseline">
-                      <Input.Label htmlFor="reason">
-                        {data.reasonTitle}
-                      </Input.Label>
+                      <Input.Label htmlFor="reason">{reasonTitle}</Input.Label>
                       <ErrorMessage
                         name="reason"
                         component={Input.ErrorMessage}
@@ -79,7 +86,7 @@ export const ContactUs = () => {
                     </div>
                     <div className="mt-1">
                       <Field name="reason" component={Select}>
-                        {data.reasons.map((reason) => (
+                        {reasons.map((reason) => (
                           <Select.Option key={reason} value={reason}>
                             {reason}
                           </Select.Option>
@@ -87,7 +94,7 @@ export const ContactUs = () => {
                       </Field>
                     </div>
                   </div>
-                  {data.hasProjectType && (
+                  {hasProjectType && (
                     <div>
                       <div className="flex items-baseline">
                         <Input.Label htmlFor="projectType">
@@ -216,7 +223,7 @@ export const ContactUs = () => {
                   <div className="sm:col-span-2">
                     <div className="flex items-baseline">
                       <Input.Label htmlFor="message">
-                        {data.messageTitle}
+                        {messageTitle}
                       </Input.Label>
                       <ErrorMessage
                         name="message"
