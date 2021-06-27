@@ -12,7 +12,13 @@ export const Layout = ({ children }: PropsWithChildren<{}>) => (
     <main className="bg-gradient-to-b from-gray-50 to-brand-gradient">
       <div className="relative overflow-hidden">
         <div className="absolute opacity-5 left-2/4 ml-20 xs:ml-24 md:ml-28 inset-y-14 sm:inset-y-4">
-          <Image src={logo} alt="" layout="fixed" width={831} height={831} />
+          <Image
+            src={logo}
+            alt="large faded background Endure Consulting logo"
+            layout="fixed"
+            width={831}
+            height={831}
+          />
         </div>
         <div className="relative">
           <Nav>
