@@ -15,7 +15,7 @@ export const Nav = ({ children }: PropsWithChildren<{}>) => (
         <div className="flex items-center flex-1 absolute inset-y-0 left-0">
           <div className="flex items-center justify-between w-full md:w-auto">
             <Link href="/">
-              <a>
+              <a className="rounded-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-brand-dark">
                 <span className="sr-only">Endure Consulting</span>
                 <div className="w-8 h-8 sm:w-10 sm:h-10">
                   <Image alt="" src={logo} layout="fill" objectFit="contain" />
