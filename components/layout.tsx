@@ -24,7 +24,7 @@ export const Layout = ({ children }: PropsWithChildren<{}>) => (
         </div>
         <div className="relative">
           <Nav>
-            <Nav.Link href="#">About</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
             <Nav.Menu name="Services">
               <Nav.Menu.Link
                 href="/services/copy-editing-proofreading"

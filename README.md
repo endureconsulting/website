@@ -29,6 +29,8 @@
 
 ### Image credits
 
+- [About cover image](https://unsplash.com/photos/A4iL43vunlY) by [
+  Matt Howard](https://unsplash.com/@thematthoward)
 - [Copy Editing/Proofreading Services cover image](https://unsplash.com/photos/l3N9Q27zULw) by [Jess Bailey](https://unsplash.com/@jessbaileydesigns)
 - [IT Engineering Services cover image](https://unsplash.com/photos/pgSkeh0yl8o) by [Christopher Robin Ebbinghaus](https://unsplash.com/@cebbbinghaus)
 - [Learning/Education Services cover image](https://unsplash.com/photos/R5S4OQpG0lE) by [
