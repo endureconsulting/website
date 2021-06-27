@@ -19,6 +19,7 @@ const defaultRouteData = {
 
 export const routeData = {
   "/": defaultRouteData,
+  "/about": defaultRouteData,
   "/services/copy-editing-proofreading": {
     title: "Tell Us About Your Project…",
     schema: contactSchemaWithProjectType,
