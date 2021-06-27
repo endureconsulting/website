@@ -2,8 +2,8 @@ import { contactSchema, contactSchemaWithProjectType } from "@/lib/schemas";
 
 export const routeData = {
   "/": {
-    schema: contactSchema,
     title: "How Can We Help?",
+    schema: contactSchema,
     reasonTitle: "Topic",
     initialReason: "General Inquiry",
     reasons: [
@@ -18,8 +18,8 @@ export const routeData = {
     messageTitle: "Message",
   },
   "/copy-editing-proofreading": {
-    schema: contactSchemaWithProjectType,
     title: "Tell Us About Your Project…",
+    schema: contactSchemaWithProjectType,
     reasonTitle: "Nature of Work",
     initialReason: "Advanced Education",
     reasons: [
