@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Nav } from "@/components/nav";
 import { ContactUs } from "@/components/contact-us";
 import { Footer } from "@/components/footer";
+import { LaptopCodeSvg } from "@/components/svg/laptop-code-svg";
 import { MemoSvg } from "@/components/svg/memo-svg";
 import logo from "@/public/logo.svg";
 
@@ -29,6 +30,12 @@ export const Layout = ({ children }: PropsWithChildren<{}>) => (
                 IconComponent={MemoSvg}
               >
                 Copy Editing / Proofreading Services
+              </Nav.Menu.Link>
+              <Nav.Menu.Link
+                href="/services/it-engineering"
+                IconComponent={LaptopCodeSvg}
+              >
+                IT Engineering Services
               </Nav.Menu.Link>
             </Nav.Menu>
             <Nav.Link href="#contact">Contact</Nav.Link>
