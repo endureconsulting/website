@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 
-import { Cta } from "@/components/video-cta/cta";
-import { Modal } from "@/components/video-cta/modal";
+import { Cta } from "@/components/cta";
+import { Modal } from "@/components/modal";
 
 export const VideoCta = () => {
   const [open, setOpen] = useState(false);

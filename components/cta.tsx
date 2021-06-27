@@ -9,7 +9,7 @@ export const Cta = ({ children }: PropsWithChildren<{}>) => (
 );
 
 Cta.Title = ({ children }: PropsWithChildren<{}>) => (
-  <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+  <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
     {children}
   </h2>
 );
@@ -18,7 +18,7 @@ Cta.Title = ({ children }: PropsWithChildren<{}>) => (
 Cta.Title.displayName = "Cta.Title";
 
 Cta.Paragraph = ({ children }: PropsWithChildren<{}>) => (
-  <p className="mt-4 leading-6 text-brand-gradient sm:text-base">{children}</p>
+  <p className="leading-6 text-brand-gradient">{children}</p>
 );
 
 // @ts-ignore
