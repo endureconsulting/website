@@ -55,10 +55,10 @@ export const Menu = ({ children, name }: Props) => (
         >
           <Popover.Panel
             static
-            className="absolute z-10 transform -translate-x-1 mt-6 px-2 w-screen max-w-sm sm:px-0"
+            className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-5 ml-2 w-screen max-w-sm sm:left-0 sm:mt-6 sm:ml-0 sm:-translate-x-14"
           >
             <div className="rounded-md shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-              <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-5">
+              <div className="relative grid gap-6 bg-white p-5 sm:gap-8">
                 {children}
               </div>
             </div>
