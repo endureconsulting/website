@@ -2,6 +2,7 @@ import { Fragment, JSXElementConstructor, PropsWithChildren } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 
+import { ChevronDownSvg } from "@/components/svg/chevron-down-svg";
 import { PropsWithClassName } from "@/types/props-with-class-name";
 
 function classNames(...classes) {
@@ -17,32 +18,20 @@ export const Menu = ({ children, name }: PropsWithChildren<MenuProps>) => (
     {({ open }) => (
       <>
         <Popover.Button
-          // Original className
-          // className={classNames(
-          //   open ? "text-gray-900" : "text-gray-500",
-          //   "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          // )}
           className={classNames(
             open ? "text-gray-900" : "text-gray-500",
-            "group inline-flex items-center font-medium text-sm py-1 border-b-2 border-transparent xs:text-base text-gray-500 hover:text-gray-900 hover:border-brand-dark focus:outline-none focus:border-brand-dark"
+            "group inline-flex items-center font-medium text-sm xs:text-base text-gray-500 hover:text-gray-900 focus:outline-none"
           )}
         >
-          <span>{name}</span>
-          {/* <ChevronDownIcon
-              className={classNames(
-                open ? "text-gray-600" : "text-gray-400",
-                "ml-2 h-5 w-5 group-hover:text-gray-500"
-              )}
-              aria-hidden="true"
-            /> */}
-          {/* <img
-              src="./chevron-down-regular.svg"
-              className={classNames(
-                open ? "text-gray-600" : "text-gray-400",
-                "ml-2 h-5 w-5 group-hover:text-gray-500"
-              )}
-              aria-hidden="true"
-            /> */}
+          <span className="py-1 border-b-2 border-transparent group-hover:border-brand-dark group-focus:border-brand-dark">
+            {name}
+          </span>
+          <ChevronDownSvg
+            className={classNames(
+              open ? "text-gray-600" : "text-gray-400",
+              "ml-2 h-4 w-4 group-hover:text-gray-500"
+            )}
+          />
         </Popover.Button>
         <Transition
           show={open}
