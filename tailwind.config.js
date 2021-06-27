@@ -28,6 +28,7 @@ module.exports = {
   variants: {
     extend: {
       backgroundColor: ["disabled"],
+      borderColor: ["group-focus"],
       opacity: ["disabled"],
     },
   },
