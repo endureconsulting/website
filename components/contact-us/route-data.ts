@@ -1,22 +1,24 @@
 import { contactSchema, contactSchemaWithProjectType } from "@/lib/schemas";
 
+const defaultRouteData = {
+  title: "How Can We Help?",
+  schema: contactSchema,
+  reasonTitle: "Topic",
+  initialReason: "General Inquiry",
+  reasons: [
+    "General Inquiry",
+    "IT Engineering",
+    "Copy Editing/Proofreading",
+    "Schedule Call or Meeting",
+    "Invoicing/Payment Inquiry",
+  ],
+  hasProjectType: false,
+  initialProjectType: "",
+  messageTitle: "Message",
+};
+
 export const routeData = {
-  "/": {
-    title: "How Can We Help?",
-    schema: contactSchema,
-    reasonTitle: "Topic",
-    initialReason: "General Inquiry",
-    reasons: [
-      "General Inquiry",
-      "IT Engineering",
-      "Copy Editing/Proofreading",
-      "Schedule Call or Meeting",
-      "Invoicing/Payment Inquiry",
-    ],
-    hasProjectType: false,
-    initialProjectType: "",
-    messageTitle: "Message",
-  },
+  "/": defaultRouteData,
   "/services/copy-editing-proofreading": {
     title: "Tell Us About Your Project…",
     schema: contactSchemaWithProjectType,
@@ -38,4 +40,5 @@ export const routeData = {
     initialProjectType: "One-Time Need/Short-Term",
     messageTitle: "Message (brief description of your project)",
   },
+  "/services/it-engineering": defaultRouteData,
 };

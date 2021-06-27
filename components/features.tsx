@@ -1,5 +1,6 @@
 import { PropsWithChildren } from "react";
 
+import { Badge } from "@/components/badge";
 import { CheckSvg } from "@/components/svg/check-svg";
 
 export const Features = ({ children }: PropsWithChildren<{}>) => (
@@ -10,10 +11,23 @@ export const Features = ({ children }: PropsWithChildren<{}>) => (
   </div>
 );
 
-Features.Item = ({ children }: PropsWithChildren<{}>) => (
+interface FeaturesItemProps {
+  tags?: string[];
+}
+
+Features.Item = ({ children, tags }: PropsWithChildren<FeaturesItemProps>) => (
   <div className="relative">
     <CheckSvg className="absolute h-6 w-6 text-green-500" />
     <p className="ml-9 leading-6 font-medium text-gray-900">{children}</p>
+    {tags && (
+      <ul className="inline-flex flex-wrap ml-9 max-w-sm">
+        {tags.map((tag) => (
+          <li key={tag}>
+            <Badge>{tag}</Badge>
+          </li>
+        ))}
+      </ul>
+    )}
   </div>
 );
 
