@@ -17,7 +17,7 @@ export const routeData = {
     initialProjectType: "",
     messageTitle: "Message",
   },
-  "/copy-editing-proofreading": {
+  "/services/copy-editing-proofreading": {
     title: "Tell Us About Your Project…",
     schema: contactSchemaWithProjectType,
     reasonTitle: "Nature of Work",

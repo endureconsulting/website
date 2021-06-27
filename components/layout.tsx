@@ -25,7 +25,7 @@ export const Layout = ({ children }: PropsWithChildren<{}>) => (
             <Nav.Link href="#">About</Nav.Link>
             <Nav.Menu name="Services">
               <Nav.Menu.Link
-                href="/copy-editing-proofreading"
+                href="/services/copy-editing-proofreading"
                 IconComponent={MemoSvg}
               >
                 Copy Editing / Proofreading Services
