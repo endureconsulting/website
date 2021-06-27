@@ -30,7 +30,7 @@ interface CtaTriggerProps {
 
 Cta.Trigger = ({ children, onClick }: PropsWithChildren<CtaTriggerProps>) => (
   <button
-    className="mt-8 inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-brand-dark bg-white hover:bg-brand-gradient focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+    className="mt-8 inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-brand-dark bg-white hover:bg-brand-gradient focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand-dark focus:ring-white"
     onClick={onClick}
   >
     {children}

@@ -16,10 +16,6 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
-    // ringColor: (theme) => ({
-    //   ...defaultTheme.ringColor(theme),
-    //   DEFAULT: "#0865A7",
-    // }),
     screens: {
       xs: "360px",
       ...defaultTheme.screens,
