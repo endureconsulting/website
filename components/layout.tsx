@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 import Image from "next/image";
 
 import { Nav } from "@/components/nav";
@@ -7,11 +7,7 @@ import { Footer } from "@/components/footer";
 import { MemoSvg } from "@/components/svg/memo-svg";
 import logo from "@/public/logo.svg";
 
-interface Props {
-  children: ReactNode;
-}
-
-export const Layout = ({ children }: Props) => (
+export const Layout = ({ children }: PropsWithChildren<{}>) => (
   <>
     <main className="bg-gradient-to-b from-gray-50 to-brand-gradient">
       <div className="relative overflow-hidden">

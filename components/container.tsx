@@ -1,13 +1,15 @@
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-interface Props {
+interface ContainerProps {
   [prop: string]: any;
-  children: ReactNode;
 }
 
-export const Container = ({ children, ...metaOverrides }: Props) => {
+export const Container = ({
+  children,
+  ...metaOverrides
+}: PropsWithChildren<ContainerProps>) => {
   const router = useRouter();
 
   const meta = {

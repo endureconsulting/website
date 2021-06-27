@@ -2,19 +2,23 @@ import {
   Dispatch,
   Fragment,
   MutableRefObject,
-  ReactNode,
+  PropsWithChildren,
   SetStateAction,
 } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
-interface Props {
-  children: ReactNode;
+interface ModalProps {
   initialFocus?: MutableRefObject<HTMLElement>;
   open: boolean;
   setOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-export const Modal = ({ children, initialFocus, open, setOpen }: Props) => {
+export const Modal = ({
+  children,
+  initialFocus,
+  open,
+  setOpen,
+}: PropsWithChildren<ModalProps>) => {
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog

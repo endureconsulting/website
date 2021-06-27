@@ -1,4 +1,4 @@
-import { ReactNode, ChangeEvent } from "react";
+import { ChangeEvent, PropsWithChildren } from "react";
 import { useFormikContext, FieldProps } from "formik";
 
 import { CheckSvg } from "@/components/svg/check-svg";
@@ -38,11 +38,10 @@ export const Input = ({
 );
 
 interface LabelProps {
-  children: ReactNode;
   htmlFor: string;
 }
 
-Input.Label = ({ children, htmlFor }: LabelProps) => (
+Input.Label = ({ children, htmlFor }: PropsWithChildren<LabelProps>) => (
   <label htmlFor={htmlFor} className="block text-sm font-medium text-gray-700">
     {children}
   </label>
@@ -52,11 +51,10 @@ Input.Label = ({ children, htmlFor }: LabelProps) => (
 Input.Label.displayName = "Input.Label";
 
 interface HintProps {
-  children: ReactNode;
   id: string;
 }
 
-Input.Hint = ({ children, id }: HintProps) => (
+Input.Hint = ({ children, id }: PropsWithChildren<HintProps>) => (
   <span id={id} className="ml-1 text-xs text-gray-500">
     {children}
   </span>
@@ -65,11 +63,7 @@ Input.Hint = ({ children, id }: HintProps) => (
 // @ts-ignore
 Input.Hint.displayName = "Input.Hint";
 
-interface ErrorMessage {
-  children: ReactNode;
-}
-
-Input.ErrorMessage = ({ children }: ErrorMessage) => (
+Input.ErrorMessage = ({ children }: PropsWithChildren<{}>) => (
   <span className="ml-1 text-xs text-red-500">{children}</span>
 );
 
@@ -99,16 +93,14 @@ export const TextArea = ({
   />
 );
 
-interface SelectProps extends FieldProps {
-  children: ReactNode;
-}
+interface SelectProps extends FieldProps {}
 
 export const Select = ({
   field,
   form: { touched, errors },
   children,
   ...remainingProps
-}: SelectProps) => (
+}: PropsWithChildren<SelectProps>) => (
   <select
     {...field}
     {...remainingProps}
@@ -125,11 +117,14 @@ export const Select = ({
 
 interface SelectOptionProps {
   [prop: string]: any;
-  children: ReactNode;
   value: string;
 }
 
-Select.Option = ({ children, value, ...remainingProps }: SelectOptionProps) => (
+Select.Option = ({
+  children,
+  value,
+  ...remainingProps
+}: PropsWithChildren<SelectOptionProps>) => (
   <option {...remainingProps} value={value}>
     {children}
   </option>
@@ -139,11 +134,13 @@ Select.Option = ({ children, value, ...remainingProps }: SelectOptionProps) => (
 Select.Option.displayName = "Select.Option";
 
 interface SubmitButtonProps {
-  children: ReactNode;
   hasSentEmail: boolean;
 }
 
-export const SubmitButton = ({ children, hasSentEmail }: SubmitButtonProps) => {
+export const SubmitButton = ({
+  children,
+  hasSentEmail,
+}: PropsWithChildren<SubmitButtonProps>) => {
   const { isSubmitting } = useFormikContext();
 
   let icon: JSX.Element;
