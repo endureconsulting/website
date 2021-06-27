@@ -1,12 +1,15 @@
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 
-interface Props {
-  children?: ReactNode;
+interface HeaderProps {
   headline: string;
   subhead: string;
 }
 
-export const Header = ({ children, headline, subhead }: Props) => (
+export const Header = ({
+  children,
+  headline,
+  subhead,
+}: PropsWithChildren<HeaderProps>) => (
   <div className="mt-16 pt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
     <div className="text-center">
       <h1 className="text-5xl tracking-tight font-extrabold text-gray-900 xs:text-6xl md:text-7xl">

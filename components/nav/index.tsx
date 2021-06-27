@@ -1,15 +1,11 @@
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import logo from "@/public/logo.svg";
 import { Menu } from "./menu";
 
-interface Props {
-  children: ReactNode;
-}
-
-export const Nav = ({ children }: Props) => (
+export const Nav = ({ children }: PropsWithChildren<{}>) => (
   <div className="fixed top-0 w-full py-3 bg-white shadow z-10">
     <div className="max-w-7xl mx-auto px-4 sm:px-6">
       <nav
@@ -35,11 +31,10 @@ export const Nav = ({ children }: Props) => (
 );
 
 interface NavLinkProps {
-  children: ReactNode;
   href: string;
 }
 
-Nav.Link = ({ children, href }: NavLinkProps) => (
+Nav.Link = ({ children, href }: PropsWithChildren<NavLinkProps>) => (
   <a
     href={href}
     className="font-medium text-sm py-1 border-b-2 border-transparent xs:text-base text-gray-500 hover:text-gray-900 hover:border-brand-dark focus:outline-none focus:border-brand-dark"

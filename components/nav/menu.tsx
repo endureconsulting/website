@@ -1,4 +1,4 @@
-import { Fragment, JSXElementConstructor, ReactNode } from "react";
+import { Fragment, JSXElementConstructor, PropsWithChildren } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 
@@ -8,12 +8,11 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-interface Props {
-  children: ReactNode;
+interface MenuProps {
   name: string;
 }
 
-export const Menu = ({ children, name }: Props) => (
+export const Menu = ({ children, name }: PropsWithChildren<MenuProps>) => (
   <Popover className="relative">
     {({ open }) => (
       <>
@@ -72,12 +71,15 @@ export const Menu = ({ children, name }: Props) => (
 );
 
 interface MenuLinkProps {
-  children: ReactNode;
   href: string;
   IconComponent: JSXElementConstructor<PropsWithClassName>;
 }
 
-Menu.Link = ({ children, href, IconComponent }: MenuLinkProps) => (
+Menu.Link = ({
+  children,
+  href,
+  IconComponent,
+}: PropsWithChildren<MenuLinkProps>) => (
   <Link href={href}>
     <a className="-m-3 p-3 flex items-start rounded hover:bg-brand-gradient transition ease-in-out duration-150">
       <IconComponent className="flex-shrink-0 h-5 w-5 text-brand" />
