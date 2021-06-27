@@ -26,3 +26,7 @@
      />
    );
    ```
+
+### Image credits
+
+- [Copy Editing/Proofreading Services cover image](https://unsplash.com/photos/l3N9Q27zULw) by [Jess Bailey](https://unsplash.com/@jessbaileydesigns)
