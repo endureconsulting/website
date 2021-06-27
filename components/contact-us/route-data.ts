@@ -41,4 +41,5 @@ export const routeData = {
     messageTitle: "Message (brief description of your project)",
   },
   "/services/it-engineering": defaultRouteData,
+  "/services/learning-education": defaultRouteData,
 };
