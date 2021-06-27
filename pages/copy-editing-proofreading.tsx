@@ -64,7 +64,24 @@ export default function CopyEditingProofreadingServices() {
             </ul>
           </div>
         </div>
-        <Features />
+        <Features>
+          <Features.Item>
+            Advanced Education (graduate student dissertations, instructor
+            lesson plans)
+          </Features.Item>
+          <Features.Item>
+            eLearning (K-12 & HigherEd curriculum, adult/professional learning)
+          </Features.Item>
+          <Features.Item>Cover Letter and Resume Writing</Features.Item>
+          <Features.Item>Social Media & Blog Posts</Features.Item>
+          <Features.Item>Internet-Published Articles</Features.Item>
+          <Features.Item>eNewsletters & Press Releases</Features.Item>
+          <Features.Item>Technology (technical writing/editing)</Features.Item>
+          <Features.Item>
+            Business (executive/C-level presentations & communication pieces)
+          </Features.Item>
+          <Features.Item>Books (non-fiction)</Features.Item>
+        </Features>
         <div className="bg-brand-dark shadow">
           <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
             <p className="text-lg text-gray-50 max-w-2xl">
