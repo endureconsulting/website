@@ -28,7 +28,7 @@ export default function ITEngineering() {
               "Artificial Intelligence (AI), Machine Learning (ML), MLOps",
             ]}
           >
-            Data Architecture and Engineering
+            Database Architecture and Engineering
           </Features.Item>
           <Features.Item>
             Mobile Application Architecture and Engineering
