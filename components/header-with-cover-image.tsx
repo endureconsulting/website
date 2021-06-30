@@ -29,11 +29,13 @@ export const HeaderWithCoverImage = ({
         aria-hidden="true"
       />
     </div>
-    <div className="relative flex flex-col items-center mx-auto max-w-3xl py-24 px-4 text-center sm:py-32 sm:px-6 lg:px-8">
+    <div className="relative flex flex-col items-center justify-center max-w-2xl h-80 mx-auto text-center sm:h-425px">
       <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
         {headline}
       </h1>
-      <div className="text-xl text-gray-100 max-w-2xl">{children}</div>
+      <div className="text-lg sm:text-xl text-gray-100 max-w-2xl">
+        {children}
+      </div>
     </div>
   </div>
 );

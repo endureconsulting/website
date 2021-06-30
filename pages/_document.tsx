@@ -55,7 +55,7 @@ gtag('config', 'G-PGYVDKMFDD');`,
             }}
           />
         </Head>
-        <body>
+        <body className="min-h-screen">
           <Main />
           <NextScript />
         </body>

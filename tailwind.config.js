@@ -16,6 +16,10 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
+    listStyleType: {
+      none: "none",
+      circle: "circle",
+    },
     screens: {
       xs: "360px",
       ...defaultTheme.screens,

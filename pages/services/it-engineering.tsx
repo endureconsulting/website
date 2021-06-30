@@ -15,38 +15,23 @@ export default function ITEngineering() {
             alt: "programming language illustration photo",
             objectPosition: "bottom",
           }}
-        >
-          <p className="mt-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt.
-          </p>
-        </HeaderWithCoverImage>
-        <Features>
-          <Features.Item tags={["full-stack", "front-end-ui", "3d"]}>
+        />
+        <Features maxCols={2}>
+          <Features.Item bullets={["Full Stack", "Front End/UI", "3D"]}>
             Software Architecture and Engineering
           </Features.Item>
-          <Features.Item>
-            Mobile Application Architecture and Engineering
-          </Features.Item>
           <Features.Item
-            tags={[
-              "performance-tuning",
-              "integrity",
-              "security",
-              "availability",
-              "recoverability",
-              "maintenance",
-              "reporting",
-              "analytics",
-              "integration-etl",
-              "artificial-intelligence",
-              "machine-learning",
-              "ml-ops",
+            bullets={[
+              "Database Performance Tuning (guaranteed to at least double performance)",
+              "Data Integrity, Security, Availability, Recoverability, Maintenance",
+              "Reporting, Analytics, Integration (ETL)",
+              "Artificial Intelligence (AI), Machine Learning (ML), MLOps",
             ]}
           >
             Data Architecture and Engineering
+          </Features.Item>
+          <Features.Item>
+            Mobile Application Architecture and Engineering
           </Features.Item>
           <Features.Item>Cloud Architecture and Engineering</Features.Item>
           <Features.Item>DevOps Engineering</Features.Item>

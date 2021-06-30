@@ -31,7 +31,7 @@
 
 - [About cover image](https://unsplash.com/photos/A4iL43vunlY) by [
   Matt Howard](https://unsplash.com/@thematthoward)
-- [Copy Editing/Proofreading Services cover image](https://unsplash.com/photos/l3N9Q27zULw) by [Jess Bailey](https://unsplash.com/@jessbaileydesigns)
 - [IT Engineering Services cover image](https://unsplash.com/photos/pgSkeh0yl8o) by [Christopher Robin Ebbinghaus](https://unsplash.com/@cebbbinghaus)
+- [Copy Editing/Proofreading Services cover image](https://unsplash.com/photos/iGLLtLINSkw) by [Aryan Dhiman](https://unsplash.com/@mylifeasaryan_)
 - [Learning/Education Services cover image](https://unsplash.com/photos/R5S4OQpG0lE) by [
   Casey Fyfe](https://unsplash.com/@caseyfyfe)

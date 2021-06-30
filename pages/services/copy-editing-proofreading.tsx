@@ -8,13 +8,13 @@ import copyEditingProofreadingServicesCover from "@/public/copy-editing-proofrea
 export default function CopyEditingProofreadingServices() {
   return (
     <Container title="Copy Editing / Proofreading Services | Endure Consulting">
-      <Layout>
+      <Layout hasContactUs>
         <HeaderWithCoverImage
           headline="Copy Editing / Proofreading Services"
           coverImage={{
             src: copyEditingProofreadingServicesCover,
-            alt: "colored pencil lined up on top of white surface photo",
-            objectPosition: "bottom",
+            alt: "keyboard image",
+            objectPosition: "top",
           }}
         >
           <p className="mt-6">How do you want to show up?</p>
@@ -29,7 +29,7 @@ export default function CopyEditingProofreadingServices() {
             <div className="text-3xl font-extrabold text-center tracking-tight text-gray-800 sm:text-4xl">
               How We Will Serve You…
             </div>
-            <ul className="mt-3 list-disc">
+            <ul className="mt-3 ml-5 sm:ml-0 list-circle">
               <li>
                 Ensure all material has correct grammar, punctuation, and
                 spelling.

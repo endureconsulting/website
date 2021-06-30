@@ -9,11 +9,20 @@ import { MemoSvg } from "@/components/svg/memo-svg";
 import { ScreenUsersSvg } from "@/components/svg/screen-users-svg";
 import logo from "@/public/logo.svg";
 
-export const Layout = ({ children }: PropsWithChildren<{}>) => (
+interface LayoutProps {
+  hasContactUs?: boolean;
+  hasTranslucentFooter?: boolean;
+}
+
+export const Layout = ({
+  children,
+  hasContactUs = false,
+  hasTranslucentFooter = false,
+}: PropsWithChildren<LayoutProps>) => (
   <>
     <main className="bg-gradient-to-b from-gray-50 to-brand-gradient">
-      <div className="relative overflow-hidden">
-        <div className="absolute opacity-5 left-2/4 ml-20 xs:ml-24 md:ml-28 inset-y-14 sm:inset-y-4">
+      <div className="min-h-screen relative overflow-hidden">
+        <div className="absolute opacity-5 left-1/2 transform -translate-x-1/2">
           <Image
             src={logo}
             alt="large faded background Endure Consulting logo"
@@ -27,16 +36,16 @@ export const Layout = ({ children }: PropsWithChildren<{}>) => (
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Menu name="Services">
               <Nav.Menu.Link
-                href="/services/copy-editing-proofreading"
-                IconComponent={MemoSvg}
-              >
-                Copy Editing / Proofreading Services
-              </Nav.Menu.Link>
-              <Nav.Menu.Link
                 href="/services/it-engineering"
                 IconComponent={LaptopCodeSvg}
               >
                 IT Engineering Services
+              </Nav.Menu.Link>
+              <Nav.Menu.Link
+                href="/services/copy-editing-proofreading"
+                IconComponent={MemoSvg}
+              >
+                Copy Editing/Proofreading Services
               </Nav.Menu.Link>
               <Nav.Menu.Link
                 href="/services/learning-education"
@@ -45,15 +54,21 @@ export const Layout = ({ children }: PropsWithChildren<{}>) => (
                 Learning/Education Services
               </Nav.Menu.Link>
             </Nav.Menu>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href={hasContactUs ? "#contact" : "/#contact"}>
+              Contact
+            </Nav.Link>
           </Nav>
           {children}
         </div>
-        <div className="relative" id="contact">
-          <ContactUs />
-        </div>
+        {hasContactUs && (
+          <div className="relative" id="contact">
+            <ContactUs />
+          </div>
+        )}
+        <Footer hasTranslucentFooter={hasTranslucentFooter}>
+          &copy; {new Date().getFullYear()} | Endure Consulting LLC
+        </Footer>
       </div>
     </main>
-    <Footer>&copy; {new Date().getFullYear()} | Endure Consulting LLC</Footer>
   </>
 );
