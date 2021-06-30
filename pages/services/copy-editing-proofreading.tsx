@@ -45,7 +45,7 @@ export default function CopyEditingProofreadingServices() {
                 audience.
               </li>
               <li>
-                Arrange and rearrange content to ensure better ‘flow’ and more
+                Arrange and rearrange content to ensure better flow and more
                 visual appeal for intended target audience.
               </li>
             </ul>
