@@ -22,7 +22,7 @@ export default function ITEngineering() {
           </Features.Item>
           <Features.Item
             bullets={[
-              "Database Performance Tuning (guaranteed to at least double performance)",
+              "Performance Tuning (guaranteed to at least double performance)",
               "Data Integrity, Security, Availability, Recoverability, Maintenance",
               "Reporting, Analytics, Integration (ETL)",
               "Artificial Intelligence (AI), Machine Learning (ML), MLOps",
