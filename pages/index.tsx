@@ -6,7 +6,7 @@ import { VideoCta } from "@/components/video-cta";
 export default function Home() {
   return (
     <Container>
-      <Layout>
+      <Layout hasContactUs>
         <Header
           headline="Endure Consulting"
           subhead="Integrity. Truth. Partnership."

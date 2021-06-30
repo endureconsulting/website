@@ -6,7 +6,7 @@ import aboutCover from "@/public/about-cover.jpg";
 export default function About() {
   return (
     <Container title="About | Endure Consulting">
-      <Layout>
+      <Layout hasTranslucentFooter>
         <HeaderWithCoverImage
           headline="About Endure Consulting"
           coverImage={{

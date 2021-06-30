@@ -30,7 +30,7 @@ export const ContactUs = () => {
     hasProjectType,
     initialProjectType,
     messageTitle,
-  } = routeData[router.asPath];
+  } = routeData[router.route];
 
   return (
     <>
