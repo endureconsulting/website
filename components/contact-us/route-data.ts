@@ -9,6 +9,7 @@ const defaultRouteData = {
     "General Inquiry",
     "IT Engineering",
     "Copy Editing/Proofreading",
+    "Learning/Education",
     "Schedule Call or Meeting",
     "Invoicing/Payment Inquiry",
   ],
