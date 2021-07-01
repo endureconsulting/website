@@ -8,13 +8,13 @@ export default function About() {
     <Container title="About | Endure Consulting">
       <Layout hasTranslucentFooter>
         <HeaderWithCoverImage
-          headline="About/Mission"
+          headline="Mission/Purpose"
           coverImage={{
             src: aboutCover,
             alt: "mountain pass during sunrise photo",
           }}
         >
-          <p className="mt-6">Coming soon. Check back later!</p>
+          <p className="mt-6">Coming soon... Check back later or reach out to us!</p>
         </HeaderWithCoverImage>
       </Layout>
     </Container>
