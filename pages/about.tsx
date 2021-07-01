@@ -14,7 +14,9 @@ export default function About() {
             alt: "mountain pass during sunrise photo",
           }}
         >
-          <p className="mt-6">Coming soon... Check back later or reach out to us!</p>
+          <p className="mt-6">
+            Coming soon... Check back later or reach out to us!
+          </p>
         </HeaderWithCoverImage>
       </Layout>
     </Container>
