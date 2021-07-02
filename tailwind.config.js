@@ -20,6 +20,12 @@ module.exports = {
       none: "none",
       circle: "circle",
     },
+    minHeight: {
+      0: "0",
+      80: "20rem",
+      full: "100%",
+      screen: "100vh",
+    },
     screens: {
       xs: "360px",
       ...defaultTheme.screens,

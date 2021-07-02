@@ -17,8 +17,8 @@ export default function CopyEditingProofreadingServices() {
             objectPosition: "top",
           }}
         >
-          <p className="mt-6">How do you want to show up?</p>
-          <p className="mt-6">
+          <p className="mt-4 sm:mt-6">How do you want to show up?</p>
+          <p className="mt-4 sm:mt-6">
             Brand and reputation are key to establishing credibility and trust.
             Regardless of the type of medium, we ensure your content will leave
             your audience engaged and impressed!
