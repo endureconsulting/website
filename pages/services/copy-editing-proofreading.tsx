@@ -67,7 +67,7 @@ export default function CopyEditingProofreadingServices() {
           <Features.Item>
             Business (executive/C-level presentations & communication pieces)
           </Features.Item>
-          <Features.Item>Books (non-fiction)</Features.Item>
+          <Features.Item>Books/Manuscripts (non-fiction)</Features.Item>
         </Features>
         <Cta>
           <Cta.Paragraph>
