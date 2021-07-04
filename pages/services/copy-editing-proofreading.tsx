@@ -59,7 +59,7 @@ export default function CopyEditingProofreadingServices() {
           <Features.Item>
             eLearning (K-12 & HigherEd curriculum, adult/professional learning)
           </Features.Item>
-          <Features.Item>Cover Letter and Resume Writing</Features.Item>
+          <Features.Item>Cover Letter & Resume Writing</Features.Item>
           <Features.Item>Social Media & Blog Posts</Features.Item>
           <Features.Item>Internet-Published Articles</Features.Item>
           <Features.Item>eNewsletters & Press Releases</Features.Item>
