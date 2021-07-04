@@ -25,9 +25,9 @@ export default function ITEngineering() {
           <Features.Item
             bullets={[
               "Performance Tuning (guaranteed to at least double performance)",
-              "Data Integrity, Security, Availability, Recoverability, Maintenance",
-              "Reporting, Analytics, Integration (ETL)",
-              "Artificial Intelligence (AI), Machine Learning (ML), MLOps",
+              "Data Integrity, Security, Availability, Recoverability & Maintenance",
+              "Reporting, Analytics & Integration (ETL)",
+              "Artificial Intelligence (AI), Machine Learning (ML) & MLOps",
             ]}
           >
             Database Architecture and Engineering
