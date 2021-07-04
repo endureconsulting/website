@@ -34,7 +34,9 @@ export default function ITEngineering() {
             Mobile Application Architecture and Engineering
           </Features.Item>
           <Features.Item>DevOps</Features.Item>
-          <Features.Item>Cloud Architecture, Security and Administration</Features.Item>
+          <Features.Item>
+            Cloud Architecture, Security and Administration
+          </Features.Item>
         </Features>
       </Layout>
     </Container>
