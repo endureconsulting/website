@@ -17,7 +17,9 @@ export default function ITEngineering() {
           }}
         />
         <Features maxCols={2}>
-          <Features.Item bullets={["Full Stack", "Back-End/API", "Front-End/UI", "3D"]}>
+          <Features.Item
+            bullets={["Full Stack", "Back-End/API", "Front-End/UI", "3D"]}
+          >
             Software Architecture and Engineering
           </Features.Item>
           <Features.Item
