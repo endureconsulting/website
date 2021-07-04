@@ -33,7 +33,8 @@ export default function ITEngineering() {
           <Features.Item bullets={["Cross-Platform", "Native"]}>
             Mobile Application Architecture and Engineering
           </Features.Item>
-          <Features.Item>DevOps</Features.Item>
+          <Features.Item bullets={["CI/CD & Continuous Monitoring", "Version Control", "Infrastructure as Code", "Configuration Management"]}>
+            DevOps</Features.Item>
           <Features.Item>
             Cloud Architecture, Security and Administration
           </Features.Item>
