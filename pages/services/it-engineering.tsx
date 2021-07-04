@@ -30,7 +30,7 @@ export default function ITEngineering() {
           >
             Database Architecture and Engineering
           </Features.Item>
-          <Features.Item>
+          <Features.Item bullets={["Cross-Platform", "Native"]}>
             Mobile Application Architecture and Engineering
           </Features.Item>
           <Features.Item>Cloud Architecture and Engineering</Features.Item>
