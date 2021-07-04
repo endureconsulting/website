@@ -33,8 +33,8 @@ export default function ITEngineering() {
           <Features.Item bullets={["Cross-Platform", "Native"]}>
             Mobile Application Architecture and Engineering
           </Features.Item>
-          <Features.Item>Cloud Architecture and Engineering</Features.Item>
-          <Features.Item>DevOps Engineering</Features.Item>
+          <Features.Item>DevOps</Features.Item>
+          <Features.Item>Cloud Architecture, Security and Administration</Features.Item>
         </Features>
       </Layout>
     </Container>
