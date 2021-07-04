@@ -15,6 +15,8 @@ export default function ITEngineering() {
             alt: "programming language illustration photo",
             objectPosition: "bottom",
           }}
+        >
+          >p className="mt-4 sm:mt-6">Proven. Trusted. Value.</p>
         />
         <Features maxCols={2}>
           <Features.Item
