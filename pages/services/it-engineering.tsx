@@ -15,7 +15,10 @@ export default function ITEngineering() {
             alt: "programming language illustration photo",
             objectPosition: "bottom",
           }}
-        />
+        >
+          <p className="mt-4 sm:mt-6">Proven. Trusted. Value.</p>
+          </p>
+        </HeaderWithCoverImage>
         <Features maxCols={2}>
           <Features.Item
             bullets={["Full Stack", "Back-End/API", "Front-End/UI", "3D"]}
