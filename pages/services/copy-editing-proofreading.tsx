@@ -52,12 +52,11 @@ export default function CopyEditingProofreadingServices() {
           </div>
         </div>
         <Features>
-          <Features.Item>
-            Advanced Education (graduate student dissertations, instructor
-            lesson plans)
+          <Features.Item> bullets={["Graduate Student Dissertations", "Instructor Lesson Plans"]}>
+            Advanced Education
           </Features.Item>
-          <Features.Item>
-            eLearning (K-12 & HigherEd curriculum, adult/professional learning)
+          <Features.Item> bullets={["K-12 & HigherEd Curriculum", "Adult/Professional Learning"]}>
+            eLearning
           </Features.Item>
           <Features.Item>Cover Letter and Resume Writing</Features.Item>
           <Features.Item>Social Media & Blog Posts</Features.Item>
