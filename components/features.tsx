@@ -38,7 +38,7 @@ Features.Item = ({
     <CheckSvg className="absolute h-6 w-6 text-green-500" />
     <p className="ml-9 leading-6 font-medium text-gray-900">{children}</p>
     {bullets && (
-      <ul className="mt-2 ml-14 list-circle leading-relaxed text-xs">
+      <ul className="mt-2 ml-14 list-circle leading-relaxed text-sm">
         {bullets.map((bullet) => (
           <li key={bullet}>{bullet}</li>
         ))}
