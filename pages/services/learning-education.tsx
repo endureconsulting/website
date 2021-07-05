@@ -17,8 +17,7 @@ export default function LearningEducation() {
           }}
         >
           <p className="mt-4 sm:mt-6">
-            Modern and engaging learning experiences for your employees and/or
-            customers.
+            Modern learning experiences for your employees and/or customers.
           </p>
         </HeaderWithCoverImage>
         <Features maxCols={1}>
