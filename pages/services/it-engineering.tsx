@@ -20,7 +20,12 @@ export default function ITEngineering() {
         </HeaderWithCoverImage>
         <Features maxCols={2}>
           <Features.Item
-            bullets={["Full Stack", "Middle-Tier, Back-End, API", "Front-End/UI", "3D"]}
+            bullets={[
+              "Full Stack",
+              "Middle-Tier, Back-End, API",
+              "Front-End/UI",
+              "3D",
+            ]}
           >
             Software Architecture and Engineering
           </Features.Item>
