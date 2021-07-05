@@ -26,7 +26,7 @@ export default function CopyEditingProofreadingServices() {
         </HeaderWithCoverImage>
         <div className="flex justify-center">
           <div className="max-w-xl pt-16 px-4 sm:pt-20 sm:px-6 lg:px-8">
-            <div className="text-3xl font-extrabold text-center tracking-tight text-gray-800 sm:text-4xl">
+            <div className="text-2xl font-extrabold text-center tracking-tight text-gray-800 sm:text-3xl">
               How We Will Serve You…
             </div>
             <ul className="mt-3 ml-5 sm:ml-0 list-circle">
