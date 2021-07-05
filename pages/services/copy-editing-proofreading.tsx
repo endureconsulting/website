@@ -69,16 +69,25 @@ export default function CopyEditingProofreadingServices() {
             eLearning
           </Features.Item>
           <Features.Item>Cover Letter & Resume Writing</Features.Item>
-          <Features.Item>Social Media & Blog Posts</Features.Item>
-          <Features.Item>Internet-Published Articles</Features.Item>
-          <Features.Item>eNewsletters & Press Releases</Features.Item>
-          <Features.Item bullets={["Technical Writing/Editing"]}>
-            Technology
+          <Features.Item
+            bullets={[
+              "Executive/C-Level Presentations & Communication Pieces",
+              "IT Technical Writing",
+              "Job Descriptions",
+            ]}
+          >
+            Business & Human Resources
           </Features.Item>
           <Features.Item
-            bullets={["Executive/C-Level Presentations & Communication Pieces"]}
+            bullets={[
+              "Websites",
+              "Internet-Published Articles",
+              "Social Media & Blog Posts",
+              "eNewsletters",
+              "Press Releases",
+            ]}
           >
-            Business
+            Online
           </Features.Item>
           <Features.Item>Books/Manuscripts (non-fiction)</Features.Item>
         </Features>
