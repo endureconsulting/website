@@ -20,6 +20,11 @@ export default function LearningEducation() {
             Modern learning experiences for your employees and/or customers.
           </p>
         </HeaderWithCoverImage>
+        <div className="flex justify-center">
+          <div className="max-w-xl pt-16l px-4 sm:pt-20 sm:px-6 lg:px-8">
+            <div className="text-2xl font-extrabold text-center tracking-tight text-gray-800 sm:text-3xl">
+              Do You Want to Build New or Enhance Existing Content? ... We do both. 
+            </div>
         <Features maxCols={1}>
           <Features.Item
             bullets={[
