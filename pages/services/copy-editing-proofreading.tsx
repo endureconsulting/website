@@ -61,10 +61,7 @@ export default function CopyEditingProofreadingServices() {
             Advanced Education
           </Features.Item>
           <Features.Item
-            bullets={[
-              "K-12 & HigherEd",
-              "Adult/Professional Learning",
-            ]}
+            bullets={["K-12 & HigherEd", "Adult/Professional Learning"]}
           >
             eLearning Curriculum
           </Features.Item>
