@@ -15,8 +15,11 @@ export default function LearningEducation() {
             alt: "concrete bridge near mountains during daytime photo",
             objectPosition: "bottom",
           }}
-        >  
-          <p className="mt-4 sm:mt-6">Modern and engaging learning experiences for your employees and/or customers.</p>
+        >
+          <p className="mt-4 sm:mt-6">
+            Modern and engaging learning experiences for your employees and/or
+            customers.
+          </p>
         </HeaderWithCoverImage>
         <Features maxCols={1}>
           <Features.Item
