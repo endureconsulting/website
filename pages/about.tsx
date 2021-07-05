@@ -15,7 +15,7 @@ export default function About() {
           }}
         >
           <p className="mt-6">
-            Coming soon... Check back later or reach out to us!
+            Coming soon... Check back later -OR- reach out to us!
           </p>
         </HeaderWithCoverImage>
       </Layout>
