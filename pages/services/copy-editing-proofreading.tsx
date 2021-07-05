@@ -47,6 +47,9 @@ export default function CopyEditingProofreadingServices() {
                 Arrange and rearrange content to ensure better flow and more
                 visual appeal for intended target audience.
               </li>
+               <li>
+                Fact-check names, titles, dates, details of events and photo captions.
+              </li>
             </ul>
           </div>
         </div>
