@@ -30,8 +30,7 @@ export default function CopyEditingProofreadingServices() {
             </div>
             <ul className="mt-3 ml-5 sm:ml-0 list-circle">
               <li>
-                Ensure all material has correct grammar, punctuation, and
-                spelling.
+                Ensure all material has correct spelling, grammar and punctuation.
               </li>
               <li>Ensure consistencies in formatting and styling.</li>
               <li>
