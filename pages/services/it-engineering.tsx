@@ -34,7 +34,7 @@ export default function ITEngineering() {
               "Performance Tuning (guaranteed to at least double performance)",
               "Data Integrity, Security, Availability, Recoverability & Maintenance",
               "On-Demand Database Administration",
-              "Business Intelligence Reporting, Analytics & Integration (ETL)",
+              "BI/Data Warehouse Reporting, Analytics & Integration (ETL)",
               "Artificial Intelligence (AI), Machine Learning (ML) & MLOps",
             ]}
           >
