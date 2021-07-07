@@ -33,7 +33,8 @@ export default function ITEngineering() {
             bullets={[
               "Performance Tuning (guaranteed to at least double performance)",
               "Data Integrity, Security, Availability, Recoverability & Maintenance",
-              "Reporting, Analytics & Integration (ETL)",
+              "On-Demand Database Administration",
+              "Business Intelligence Reporting, Analytics & Integration (ETL)",
               "Artificial Intelligence (AI), Machine Learning (ML) & MLOps",
             ]}
           >
