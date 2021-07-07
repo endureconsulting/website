@@ -81,6 +81,7 @@ export default function CopyEditingProofreadingServices() {
           </Features.Item>
           <Features.Item
             bullets={[
+              "Marketing Material",
               "Executive/C-Level Presentations & Communication Pieces",
               "IT Technical Writing",
               "Job Descriptions",
