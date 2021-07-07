@@ -71,8 +71,9 @@ export default function CopyEditingProofreadingServices() {
           <Features.Item
             bullets={[
               "Websites",
+              "Marketing/Advertisements",
               "Internet-Published Articles",
-              "Social Media & Blog Posts",
+              "Social Media/Blog Posts",
               "eNewsletters",
               "Press Releases",
             ]}
@@ -81,6 +82,7 @@ export default function CopyEditingProofreadingServices() {
           </Features.Item>
           <Features.Item
             bullets={[
+              "Sales & Marketing Collateral",
               "Executive/C-Level Presentations & Communication Pieces",
               "IT Technical Writing",
               "Job Descriptions",
