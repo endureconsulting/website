@@ -1,6 +1,7 @@
 import { Container } from "@/components/container";
 import { Layout } from "@/components/layout";
 import { HeaderWithCoverImage } from "@/components/header-with-cover-image";
+import { XlLogoBackground } from "@/components/xl-logo-background";
 import { Features } from "@/components/features";
 import learningEducationServicesCover from "@/public/learning-education-services-cover.jpg";
 
@@ -20,6 +21,7 @@ export default function LearningEducation() {
             Modern learning experiences for your employees and/or customers.
           </p>
         </HeaderWithCoverImage>
+        <XlLogoBackground />
         <Features maxCols={1}>
           <Features.Item
             bullets={[

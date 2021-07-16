@@ -1,6 +1,7 @@
 import { Container } from "@/components/container";
 import { Layout } from "@/components/layout";
 import { HeaderWithCoverImage } from "@/components/header-with-cover-image";
+import { XlLogoBackground } from "@/components/xl-logo-background";
 import aboutCover from "@/public/about-cover.jpg";
 
 export default function About() {
@@ -18,6 +19,7 @@ export default function About() {
             Coming soon... Check back later OR reach out to us!
           </p>
         </HeaderWithCoverImage>
+        <XlLogoBackground />
       </Layout>
     </Container>
   );

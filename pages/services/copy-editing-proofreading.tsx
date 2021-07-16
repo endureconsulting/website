@@ -1,6 +1,7 @@
 import { Container } from "@/components/container";
 import { Layout } from "@/components/layout";
 import { HeaderWithCoverImage } from "@/components/header-with-cover-image";
+import { XlLogoBackground } from "@/components/xl-logo-background";
 import { Features } from "@/components/features";
 import { Cta } from "@/components/cta";
 import copyEditingProofreadingServicesCover from "@/public/copy-editing-proofreading-services-cover.jpg";
@@ -23,6 +24,7 @@ export default function CopyEditingProofreadingServices() {
             your audience engaged and impressed!
           </p>
         </HeaderWithCoverImage>
+        <XlLogoBackground />
         <div className="flex justify-center">
           <div className="max-w-xl pt-16 px-4 sm:pt-20 sm:px-6 lg:px-8">
             <div className="text-2xl font-extrabold text-center tracking-tight text-gray-800 sm:text-3xl">

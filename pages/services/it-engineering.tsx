@@ -1,6 +1,7 @@
 import { Container } from "@/components/container";
 import { Layout } from "@/components/layout";
 import { HeaderWithCoverImage } from "@/components/header-with-cover-image";
+import { XlLogoBackground } from "@/components/xl-logo-background";
 import { Features } from "@/components/features";
 import itEngineeringServicesCover from "@/public/it-engineering-services-cover.jpg";
 
@@ -18,6 +19,7 @@ export default function ITEngineering() {
         >
           <p className="mt-4 sm:mt-6">Proven. Trusted. Value.</p>
         </HeaderWithCoverImage>
+        <XlLogoBackground />
         <Features maxCols={2}>
           <Features.Item
             bullets={[
