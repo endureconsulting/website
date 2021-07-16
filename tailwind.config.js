@@ -5,6 +5,9 @@ module.exports = {
   purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        logo: "url('/opaque-logo.svg')",
+      },
       colors: {
         gray: colors.trueGray,
         blue: colors.sky,

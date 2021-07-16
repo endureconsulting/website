@@ -10,7 +10,7 @@ export const Header = ({
   headline,
   subhead,
 }: PropsWithChildren<HeaderProps>) => (
-  <div className="mt-16 pt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
+  <div className="mt-14 pt-16 mx-auto max-w-7xl px-4 sm:mt-16 sm:pt-24 sm:px-6">
     <div className="text-center">
       <h1 className="text-5xl tracking-tight font-extrabold text-gray-900 xs:text-6xl md:text-7xl">
         {headline}
