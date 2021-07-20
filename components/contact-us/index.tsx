@@ -33,7 +33,7 @@ export const ContactUs = () => {
   } = routeData[router.route];
 
   return (
-    <>
+    <div className="relative" id="contact">
       <div className="absolute inset-0 flex flex-col" aria-hidden="true">
         <div className="flex-1" />
         <div className="flex-1 w-full bg-brand-dark" />
@@ -245,7 +245,7 @@ export const ContactUs = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
