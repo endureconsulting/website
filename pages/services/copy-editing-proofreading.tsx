@@ -4,12 +4,13 @@ import { HeaderWithCoverImage } from "@/components/header-with-cover-image";
 import { XlLogoBackground } from "@/components/xl-logo-background";
 import { Features } from "@/components/features";
 import { Cta } from "@/components/cta";
+import { ContactUs } from "@/components/contact-us";
 import copyEditingProofreadingServicesCover from "@/public/copy-editing-proofreading-services-cover.jpg";
 
 export default function CopyEditingProofreadingServices() {
   return (
     <Container title="Copy Editing / Proofreading Services | Endure Consulting">
-      <Layout hasContactUs>
+      <Layout>
         <HeaderWithCoverImage
           headline="Copy Editing / Proofreading Services"
           coverImage={{
@@ -104,6 +105,7 @@ export default function CopyEditingProofreadingServices() {
               chat). We will respond to your inquiry within 12 hours. Thank you!
             </Cta.Paragraph>
           </Cta>
+          <ContactUs />
         </XlLogoBackground>
       </Layout>
     </Container>
