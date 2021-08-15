@@ -2,7 +2,7 @@ import { MouseEventHandler, PropsWithChildren } from "react";
 
 export const Cta = ({ children }: PropsWithChildren<{}>) => (
   <div className="bg-brand-dark shadow">
-    <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+    <div className="max-w-3xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
       {children}
     </div>
   </div>

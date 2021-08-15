@@ -23,6 +23,7 @@ export const ContactUs = () => {
 
   const {
     title,
+    description,
     schema,
     reasonTitle,
     initialReason,
@@ -45,6 +46,11 @@ export const ContactUs = () => {
               <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 {title}
               </h2>
+              {description && (
+                <p className="mt-4 leading-6 text-sm text-gray-500">
+                  {description}
+                </p>
+              )}
             </div>
             <div className="mt-8">
               <Formik

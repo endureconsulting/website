@@ -1,11 +1,18 @@
+import Image from "next/image";
+
 import { Container } from "@/components/container";
 import { Layout } from "@/components/layout";
 import { HeaderWithCoverImage } from "@/components/header-with-cover-image";
 import { XlLogoBackground } from "@/components/xl-logo-background";
 import { Features } from "@/components/features";
-import { Cta } from "@/components/cta";
+import { LogoCloud } from "@/components/logo-cloud";
 import { ContactUs } from "@/components/contact-us";
+import { SecurityStudioLogo } from "@/components/svg/security-studio";
+import { ProsperStackLogo } from "@/components/svg/prosper-stack";
 import copyEditingProofreadingServicesCover from "@/public/copy-editing-proofreading-services-cover.jpg";
+import absoluteDevelopmentLogo from "@/public/client-logos/absolute-development.png";
+import justinPetersMinistriesLogo from "@/public/client-logos/justin-peters-ministries.png";
+import phoneLiveStreamingLogo from "@/public/client-logos/phone-live-streaming.png";
 
 export default function CopyEditingProofreadingServices() {
   return (
@@ -96,15 +103,38 @@ export default function CopyEditingProofreadingServices() {
             <Features.Item>Cover Letter & Resume Writing</Features.Item>
             <Features.Item>Books/Manuscripts (non-fiction)</Features.Item>
           </Features>
-          <Cta>
-            <Cta.Paragraph>
-              We would love to earn the opportunity to speak with you — and
-              LISTEN TO YOU. If you are interested in getting acquainted to
-              discuss your project(s), you can fill out the form below to
-              schedule a free &apos;discovery&apos; meeting (via phone or video
-              chat). We will respond to your inquiry within 12 hours. Thank you!
-            </Cta.Paragraph>
-          </Cta>
+          <LogoCloud title="Clients…">
+            <LogoCloud.Client>
+              <SecurityStudioLogo className="h-9" />
+            </LogoCloud.Client>
+            <LogoCloud.Client>
+              <ProsperStackLogo className="h-9" />
+            </LogoCloud.Client>
+            <LogoCloud.Client>
+              <Image
+                src={phoneLiveStreamingLogo}
+                alt="PhoneLiveStreaming"
+                width={285}
+                height={44.77}
+              />
+            </LogoCloud.Client>
+            <LogoCloud.Client>
+              <Image
+                src={absoluteDevelopmentLogo}
+                alt="Absolute Development"
+                width={148.57}
+                height={48}
+              />
+            </LogoCloud.Client>
+            <LogoCloud.Client>
+              <Image
+                src={justinPetersMinistriesLogo}
+                alt="Justin Peters Ministries"
+                width={193.42}
+                height={48}
+              />
+            </LogoCloud.Client>
+          </LogoCloud>
           <ContactUs />
         </XlLogoBackground>
       </Layout>
