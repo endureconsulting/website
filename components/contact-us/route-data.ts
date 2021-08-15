@@ -23,6 +23,8 @@ export const routeData = {
   "/about": defaultRouteData,
   "/services/copy-editing-proofreading": {
     title: "Tell Us About Your Project…",
+    description:
+      "We would love to earn the opportunity to speak with you — and LISTEN TO YOU. If you are interested in getting acquainted to discuss your project(s), you can fill out the form below to schedule a free 'discovery' meeting (via phone or video chat). We will respond to your inquiry within 12 hours. Thank you!",
     schema: contactSchemaWithProjectType,
     reasonTitle: "Nature of Work",
     initialReason: "Advanced Education",
