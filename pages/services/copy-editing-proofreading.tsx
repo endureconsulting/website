@@ -67,24 +67,12 @@ export default function CopyEditingProofreadingServices() {
           <Features>
             <Features.Item
               bullets={[
-                "Graduate Student Dissertations",
-                "Instructor Lesson Plans",
-              ]}
-            >
-              Advanced Education
-            </Features.Item>
-            <Features.Item
-              bullets={["K-12 & HigherEd", "Adult/Professional Learning"]}
-            >
-              eLearning Curriculum
-            </Features.Item>
-            <Features.Item
-              bullets={[
                 "Websites",
+                "Social Media/Blog Posts",
+                "Promotional Emails",
+                "eNewsletters",
                 "Marketing/Advertisements",
                 "Internet-Published Articles",
-                "Social Media/Blog Posts",
-                "eNewsletters",
                 "Press Releases",
               ]}
             >
@@ -100,8 +88,21 @@ export default function CopyEditingProofreadingServices() {
             >
               Business & Human Resources
             </Features.Item>
+            <Features.Item>Books/Manuscripts</Features.Item>
+            <Features.Item
+              bullets={[
+                "Dissertations",
+                "Instructor Lesson Plans",
+              ]}
+            >
+              Advanced Education
+            </Features.Item>
+            <Features.Item
+              bullets={["K-12 & HigherEd", "Adult/Professional Learning"]}
+            >
+              eLearning Curriculum
+            </Features.Item>
             <Features.Item>Cover Letter & Resume Writing</Features.Item>
-            <Features.Item>Books/Manuscripts (non-fiction)</Features.Item>
           </Features>
           <LogoCloud title="Who We Are Serving…">
             <LogoCloud.Client>
