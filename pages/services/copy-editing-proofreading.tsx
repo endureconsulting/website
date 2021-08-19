@@ -90,10 +90,7 @@ export default function CopyEditingProofreadingServices() {
             </Features.Item>
             <Features.Item>Books/Manuscripts</Features.Item>
             <Features.Item
-              bullets={[
-                "Dissertations",
-                "Instructor Lesson Plans",
-              ]}
+              bullets={["Dissertations", "Instructor Lesson Plans"]}
             >
               Advanced Education
             </Features.Item>
