@@ -103,7 +103,7 @@ export default function CopyEditingProofreadingServices() {
             <Features.Item>Cover Letter & Resume Writing</Features.Item>
             <Features.Item>Books/Manuscripts (non-fiction)</Features.Item>
           </Features>
-          <LogoCloud title="Clients…">
+          <LogoCloud title="Who We Are Serving…">
             <LogoCloud.Client>
               <SecurityStudioLogo className="h-7 text-brand-gradient" />
             </LogoCloud.Client>
