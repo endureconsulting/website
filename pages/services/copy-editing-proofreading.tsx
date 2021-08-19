@@ -40,7 +40,7 @@ export default function CopyEditingProofreadingServices() {
               </div>
               <ul className="mt-3 ml-5 sm:ml-0 list-circle">
                 <li>
-                  Ensure all material is free of typos and has correct spelling, 
+                  Ensure all material is free of typos and has correct spelling,
                   grammar and punctuation.
                 </li>
                 <li>Ensure consistencies in formatting and styling.</li>
