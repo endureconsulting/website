@@ -83,7 +83,8 @@ export default function CopyEditingProofreadingServices() {
                 "Sales & Marketing Collateral",
                 "Executive/C-Level Presentations & Communication Pieces",
                 "IT Technical Writing",
-                "Job Descriptions",
+                "Cover Letter & Résumé Writing",
+                "Job Descriptions/Postings",
               ]}
             >
               Business & Human Resources
@@ -99,7 +100,6 @@ export default function CopyEditingProofreadingServices() {
             >
               eLearning Curriculum
             </Features.Item>
-            <Features.Item>Cover Letter & Resume Writing</Features.Item>
           </Features>
           <LogoCloud title="Who We Are Serving…">
             <LogoCloud.Client>
