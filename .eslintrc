@@ -6,6 +6,7 @@
   ],
   "plugins": ["unicorn", "promise"],
   "rules": {
+    "unicorn/filename-case": "off",
     "unicorn/prefer-node-protocol": "off",
     "unicorn/prevent-abbreviations": [
       "error",
