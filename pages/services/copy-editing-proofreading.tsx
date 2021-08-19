@@ -7,8 +7,8 @@ import { XlLogoBackground } from "@/components/xl-logo-background";
 import { Features } from "@/components/features";
 import { LogoCloud } from "@/components/logo-cloud";
 import { ContactUs } from "@/components/contact-us";
-import { SecurityStudioLogo } from "@/components/svg/security-studio";
-import { ProsperStackLogo } from "@/components/svg/prosper-stack";
+import { SecurityStudioLogo } from "@/components/svg/SecurityStudioLogo";
+import { ProsperStackLogo } from "@/components/svg/ProsperStackLogo";
 import copyEditingProofreadingServicesCover from "@/public/copy-editing-proofreading-services-cover.jpg";
 import absoluteDevelopmentLogo from "@/public/client-logos/absolute-development.png";
 import justinPetersMinistriesLogo from "@/public/client-logos/justin-peters-ministries.png";
@@ -103,35 +103,35 @@ export default function CopyEditingProofreadingServices() {
             <Features.Item>Cover Letter & Resume Writing</Features.Item>
             <Features.Item>Books/Manuscripts (non-fiction)</Features.Item>
           </Features>
-          <LogoCloud title="Clients…">
+          <LogoCloud title="Clients…" cols={3}>
             <LogoCloud.Client>
-              <SecurityStudioLogo className="h-9" />
+              <SecurityStudioLogo className="h-7 text-brand-gradient" />
             </LogoCloud.Client>
             <LogoCloud.Client>
-              <ProsperStackLogo className="h-9" />
+              <ProsperStackLogo className="h-7 text-brand-gradient" />
             </LogoCloud.Client>
             <LogoCloud.Client>
               <Image
                 src={phoneLiveStreamingLogo}
                 alt="PhoneLiveStreaming"
-                width={285}
-                height={44.77}
+                width={229.19}
+                height={36}
               />
             </LogoCloud.Client>
             <LogoCloud.Client>
               <Image
                 src={absoluteDevelopmentLogo}
                 alt="Absolute Development"
-                width={148.57}
-                height={48}
+                width={111.43}
+                height={36}
               />
             </LogoCloud.Client>
             <LogoCloud.Client>
               <Image
                 src={justinPetersMinistriesLogo}
                 alt="Justin Peters Ministries"
-                width={193.42}
-                height={48}
+                width={145.07}
+                height={36}
               />
             </LogoCloud.Client>
           </LogoCloud>
