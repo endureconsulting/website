@@ -40,8 +40,8 @@ export default function CopyEditingProofreadingServices() {
               </div>
               <ul className="mt-3 ml-5 sm:ml-0 list-circle">
                 <li>
-                  Ensure all material has correct spelling, grammar and
-                  punctuation.
+                  Ensure all material is free of typos and has correct spelling, 
+                  grammar and punctuation.
                 </li>
                 <li>Ensure consistencies in formatting and styling.</li>
                 <li>
@@ -56,10 +56,6 @@ export default function CopyEditingProofreadingServices() {
                 <li>
                   Arrange and rearrange content to ensure better flow and more
                   visual appeal for intended target audience.
-                </li>
-                <li>
-                  Fact-check names, titles, dates, details of events and photo
-                  captions.
                 </li>
               </ul>
             </div>
