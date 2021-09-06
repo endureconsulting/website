@@ -12,7 +12,7 @@ export const LogoCloud = ({
 }: PropsWithChildren<LogoCloudProps>) => (
   <Cta>
     <Cta.Title>{title}</Cta.Title>
-    <div className="mt-6 grid grid-cols-1 gap-0.5 sm:grid-cols-2 md:grid-cols-3 lg:mt-8">
+    <div className="mt-6 grid grid-cols-1 gap-0.5 sm:grid-cols-2 md:grid-cols-2 lg:mt-8">
       {children}
     </div>
   </Cta>
