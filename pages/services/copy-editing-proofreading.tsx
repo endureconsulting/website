@@ -99,33 +99,33 @@ export default function CopyEditingProofreadingServices() {
           </Features>
           <LogoCloud title="Who We Are Serving…">
             <LogoCloud.Client>
-              <SecurityStudioLogo className="h-7 text-brand-gradient" />
+              <SecurityStudioLogo className="h-8 text-brand-gradient" />
             </LogoCloud.Client>
             <LogoCloud.Client>
-              <ProsperStackLogo className="h-7 text-brand-gradient" />
+              <ProsperStackLogo className="h-8 text-brand-gradient" />
             </LogoCloud.Client>
             <LogoCloud.Client>
               <Image
                 src={phoneLiveStreamingLogo}
                 alt="PhoneLiveStreaming"
-                width={229.19}
-                height={36}
+                width={254.65}
+                height={40}
               />
             </LogoCloud.Client>
             <LogoCloud.Client>
               <Image
                 src={absoluteDevelopmentLogo}
                 alt="Absolute Development"
-                width={111.43}
-                height={36}
+                width={123.81}
+                height={40}
               />
             </LogoCloud.Client>
             <LogoCloud.Client>
               <Image
                 src={justinPetersMinistriesLogo}
                 alt="Justin Peters Ministries"
-                width={145.07}
-                height={36}
+                width={161.19}
+                height={40}
               />
             </LogoCloud.Client>
           </LogoCloud>
