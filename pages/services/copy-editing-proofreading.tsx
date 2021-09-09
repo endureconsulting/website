@@ -13,6 +13,7 @@ import copyEditingProofreadingServicesCover from "@/public/copy-editing-proofrea
 import absoluteDevelopmentLogo from "@/public/client-logos/absolute-development.png";
 import justinPetersMinistriesLogo from "@/public/client-logos/justin-peters-ministries.png";
 import phoneLiveStreamingLogo from "@/public/client-logos/phone-live-streaming.png";
+import wisdomHouseBooksLogo from "@/public/client-logos/wisdom-house-books.png";
 
 export default function CopyEditingProofreadingServices() {
   return (
@@ -126,6 +127,14 @@ export default function CopyEditingProofreadingServices() {
                 alt="Justin Peters Ministries"
                 width={161.19}
                 height={40}
+              />
+            </LogoCloud.Client>
+            <LogoCloud.Client>
+              <Image
+                src={wisdomHouseBooksLogo}
+                alt="Wisdom House Books"
+                width={242.57}
+                height={30}
               />
             </LogoCloud.Client>
           </LogoCloud>
