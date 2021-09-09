@@ -86,7 +86,14 @@ export default function CopyEditingProofreadingServices() {
             >
               Business & Human Resources
             </Features.Item>
-            <Features.Item>Books/Manuscripts</Features.Item>
+            <Features.Item
+              bullets={[
+                "Non-Fiction",
+                "Fiction",
+              ]}
+            >
+              Books/Manuscripts
+            </Features.Item>
             <Features.Item
               bullets={["Dissertations", "Instructor Lesson Plans"]}
             >
