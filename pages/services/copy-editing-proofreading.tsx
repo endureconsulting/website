@@ -1,19 +1,11 @@
-import Image from "next/image";
-
 import { Container } from "@/components/container";
 import { Layout } from "@/components/layout";
 import { HeaderWithCoverImage } from "@/components/header-with-cover-image";
 import { XlLogoBackground } from "@/components/xl-logo-background";
 import { Features } from "@/components/features";
-import { LogoCloud } from "@/components/logo-cloud";
+import { CopyEditingPortfolio } from "@/components/copy-editing-portfolio";
 import { ContactUs } from "@/components/contact-us";
-import { SecurityStudioLogo } from "@/components/svg/SecurityStudioLogo";
-import { ProsperStackLogo } from "@/components/svg/ProsperStackLogo";
 import copyEditingProofreadingServicesCover from "@/public/copy-editing-proofreading-services-cover.jpg";
-import absoluteDevelopmentLogo from "@/public/client-logos/absolute-development.png";
-import justinPetersMinistriesLogo from "@/public/client-logos/justin-peters-ministries.png";
-import phoneLiveStreamingLogo from "@/public/client-logos/phone-live-streaming.png";
-import wisdomHouseBooksLogo from "@/public/client-logos/wisdom-house-books.png";
 
 export default function CopyEditingProofreadingServices() {
   return (
@@ -100,46 +92,7 @@ export default function CopyEditingProofreadingServices() {
               eLearning Curriculum
             </Features.Item>
           </Features>
-          <LogoCloud title="Who We Are Serving…">
-            <LogoCloud.Client>
-              <SecurityStudioLogo className="h-8 text-brand-gradient" />
-            </LogoCloud.Client>
-            <LogoCloud.Client>
-              <ProsperStackLogo className="h-8 text-brand-gradient" />
-            </LogoCloud.Client>
-            <LogoCloud.Client>
-              <Image
-                src={phoneLiveStreamingLogo}
-                alt="PhoneLiveStreaming"
-                width={254.65}
-                height={40}
-              />
-            </LogoCloud.Client>
-            <LogoCloud.Client>
-              <Image
-                src={absoluteDevelopmentLogo}
-                alt="Absolute Development"
-                width={123.81}
-                height={40}
-              />
-            </LogoCloud.Client>
-            <LogoCloud.Client>
-              <Image
-                src={justinPetersMinistriesLogo}
-                alt="Justin Peters Ministries"
-                width={161.19}
-                height={40}
-              />
-            </LogoCloud.Client>
-            <LogoCloud.Client>
-              <Image
-                src={wisdomHouseBooksLogo}
-                alt="Wisdom House Books"
-                width={242.57}
-                height={30}
-              />
-            </LogoCloud.Client>
-          </LogoCloud>
+          <CopyEditingPortfolio />
           <ContactUs />
         </XlLogoBackground>
       </Layout>
