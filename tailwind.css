@@ -27,6 +27,19 @@
   height: 100%;
 }
 
+.rounded-2col-grid div:nth-child(1) {
+  @apply rounded-tl-lg rounded-tr-lg sm:rounded-tr-none;
+}
+.rounded-2col-grid div:nth-child(2) {
+  @apply sm:rounded-tr-lg;
+}
+.rounded-2col-grid div:nth-last-child(2) {
+  @apply sm:rounded-bl-lg;
+}
+.rounded-2col-grid div:nth-last-child(1) {
+  @apply rounded-bl-lg rounded-br-lg sm:rounded-bl-none;
+}
+
 @tailwind utilities;
 
 @font-face {
