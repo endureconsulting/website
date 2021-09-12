@@ -38,6 +38,13 @@ const actions = [
     href: "#",
     icon: FileCertificateSvg,
   },
+  {
+    title: "Wisdom House Books – Books/Manuscripts",
+    description:
+      "Copy editing/proofreading several books and manuscripts, spanning across different genres.",
+    href: "#",
+    icon: BookOpenCoverSvg,
+  },
 ];
 
 function classNames(...classes) {
