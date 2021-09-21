@@ -37,7 +37,7 @@ export const routeData = {
       "Other",
     ],
     hasProjectType: true,
-    initialProjectType: "One-Time Need/Short-Term",
+    initialProjectType: "Ongoing/Long-Term",
     messageTitle: "Message (brief description of your project)",
   },
   "/services/it-engineering": defaultRouteData,
