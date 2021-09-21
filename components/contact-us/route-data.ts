@@ -27,9 +27,9 @@ export const routeData = {
       "We would love to earn the opportunity to speak with you — and LISTEN TO YOU. If you are interested in getting acquainted to discuss your project(s), you can fill out the form below to schedule a free 'discovery' meeting (via phone or video chat). We will respond to your inquiry within 12 hours. Thank you!",
     schema: contactSchemaWithProjectType,
     reasonTitle: "Nature of Work",
-    initialReason: "Online",
+    initialReason: "Online Media",
     reasons: [
-      "Online",
+      "Online Media",
       "Business & Human Resources",
       "Books/Manuscripts",
       "Advanced Education",
