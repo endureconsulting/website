@@ -73,7 +73,7 @@ export default function CopyEditingProofreadingServices() {
                 "Press Releases",
               ]}
             >
-              Online
+              Online Media
             </Features.Item>
             <Features.Item
               bullets={[
