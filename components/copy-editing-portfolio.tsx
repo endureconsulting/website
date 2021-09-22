@@ -72,15 +72,15 @@ export const CopyEditingPortfolio = () => {
             href="/work-examples/ProsperStack_ContentPosts.pdf"
             IconComponent={CloudSvg}
           >
-            Copy editing/proofreading ProsperStack’s Linkedin content posts.
-            Effective July 2021, have taken ownership of content calendar.
+            Copy edited/proofread ProsperStack’s Linkedin content posts.
+            For the months of July and August 2021, took ownership of content calendar.
           </Portfolio.Project>
           <Portfolio.Project
             title="Justin Peters Ministries – Mini-Book"
             IconComponent={BookOpenCoverSvg}
           >
             Sole copy editor/proofreader for mini-book entitled “Santa Pause,”
-            authored by Justin Peters. Book published and distributed.
+            authored by Justin Peters.
           </Portfolio.Project>
           <Portfolio.Project
             title="PhoneLiveStreaming – Website Content"
@@ -103,8 +103,8 @@ export const CopyEditingPortfolio = () => {
             href="https://psyarxiv.com/dj5en"
             IconComponent={FileCertificateSvg}
           >
-            Proofread a University of Minnesota Graduate School dissertation
-            that was published in Collabra: Psychology, a journal dedicated to
+            Copy edited/proofread a University of Minnesota Graduate School dissertation
+            that was published in "Collabra: Psychology," a journal dedicated to
             improving psychological science
             (https://online.ucpress.edu/collabra).
           </Portfolio.Project>
@@ -112,7 +112,7 @@ export const CopyEditingPortfolio = () => {
             title="Wisdom House Books – Books/Manuscripts"
             IconComponent={BookOpenCoverSvg}
           >
-            Copy editing/proofreading several books and manuscripts, spanning
+            Copy editing/proofreading several books and manuscripts
             across different genres.
           </Portfolio.Project>
         </Portfolio>
