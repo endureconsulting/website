@@ -48,7 +48,7 @@ Portfolio.Project = ({
       {!href && (
         <>
           <span className="mt-3 text-sm italic font-medium text-brand">
-            Work example coming soon…
+            Coming soon…
           </span>
         </>
       )}
