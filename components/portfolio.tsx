@@ -28,7 +28,12 @@ Portfolio.Project = ({
     <div className="flex flex-col mt-5">
       <h3 className="text-lg font-medium">
         {href ? (
-          <a href={href} className="focus:outline-none" target="_blank">
+          <a
+            className="focus:outline-none"
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+          >
             <span className="absolute inset-0" aria-hidden="true" />
             {title}
           </a>
