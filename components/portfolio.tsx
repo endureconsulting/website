@@ -9,7 +9,7 @@ export const Portfolio = ({ children }: PropsWithChildren<{}>) => (
 
 interface PortfolioProjectProps {
   title: string;
-  href: string;
+  href?: string;
   IconComponent: JSXElementConstructor<PropsWithClassName>;
 }
 
@@ -25,14 +25,28 @@ Portfolio.Project = ({
         <IconComponent className="h-6 w-6" aria-hidden="true" />
       </span>
     </div>
-    <div className="mt-5">
+    <div className="flex flex-col mt-5">
       <h3 className="text-lg font-medium">
-        <a href={href} className="focus:outline-none">
-          <span className="absolute inset-0" aria-hidden="true" />
-          {title}
-        </a>
+        {href ? (
+          <a href={href} className="focus:outline-none" target="_blank">
+            <span className="absolute inset-0" aria-hidden="true" />
+            {title}
+          </a>
+        ) : (
+          <a href="javascript:void(0);" className="focus:outline-none">
+            <span className="absolute inset-0" aria-hidden="true" />
+            {title}
+          </a>
+        )}
       </h3>
       <p className="mt-1 text-sm text-gray-500">{children}</p>
+      {!href && (
+        <>
+          <span className="mt-3 text-sm italic font-medium text-brand">
+            Work example coming soon…
+          </span>
+        </>
+      )}
     </div>
   </div>
 );

@@ -69,7 +69,7 @@ export const CopyEditingPortfolio = () => {
         <Portfolio>
           <Portfolio.Project
             title="ProsperStack – Linkedin Content"
-            href="#"
+            href="/work-examples/ProsperStack_ContentPosts.pdf"
             IconComponent={CloudSvg}
           >
             Copy editing/proofreading ProsperStack’s Linkedin content posts.
@@ -77,7 +77,6 @@ export const CopyEditingPortfolio = () => {
           </Portfolio.Project>
           <Portfolio.Project
             title="Justin Peters Ministries – Mini-Book"
-            href="#"
             IconComponent={BookOpenCoverSvg}
           >
             Sole copy editor/proofreader for mini-book entitled “Santa Pause,”
@@ -85,7 +84,7 @@ export const CopyEditingPortfolio = () => {
           </Portfolio.Project>
           <Portfolio.Project
             title="PhoneLiveStreaming – Website Content"
-            href="#"
+            href="https://phonelivestreaming.com"
             IconComponent={CloudSvg}
           >
             Sole copy editor/proofreader for phonelivestreaming.com website
@@ -93,7 +92,7 @@ export const CopyEditingPortfolio = () => {
           </Portfolio.Project>
           <Portfolio.Project
             title="Absolute Development – Website Content"
-            href="#"
+            href="https://www.absolutedevelopment.com"
             IconComponent={CloudSvg}
           >
             Sole copy editor/proofreader for absolutedevelopment.com website
@@ -101,7 +100,7 @@ export const CopyEditingPortfolio = () => {
           </Portfolio.Project>
           <Portfolio.Project
             title="University of MN – Dissertation Project"
-            href="#"
+            href="https://psyarxiv.com/dj5en"
             IconComponent={FileCertificateSvg}
           >
             Proofread a University of Minnesota Graduate School dissertation
@@ -111,7 +110,6 @@ export const CopyEditingPortfolio = () => {
           </Portfolio.Project>
           <Portfolio.Project
             title="Wisdom House Books – Books/Manuscripts"
-            href="#"
             IconComponent={BookOpenCoverSvg}
           >
             Copy editing/proofreading several books and manuscripts, spanning
